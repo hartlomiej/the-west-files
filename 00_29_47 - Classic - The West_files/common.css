@@ -1,0 +1,53 @@
+/* .table is a table with dark header and thin black lines between the cells */
+
+.table, .table td {
+	border-collapse:collapse;
+	padding: 2px;
+}
+
+.table th {
+	font-weight:bold;
+	background-image:url(../images/border/table/dark.png);
+	text-align: center;
+}
+
+.table td {
+	background-image:url(../images/border/table/bright.png);
+}
+
+.table td#highlight {
+    background-image:url(../images/muster.jpg);
+}
+
+
+.table .right {
+	text-align: right;
+}
+
+.table .center {
+	text-align: center;
+}
+
+/* .border is for tables with inner border */
+
+.border td {
+	border: solid 1px #666;
+}
+.border th {
+	border:1px solid #000;
+}
+
+/* .hborder is a table with inner horizontal borders */
+
+.hborder td {
+	border-top: solid 1px #666;
+}
+.hborder th {
+	border-top:1px solid #000;
+}
+
+/* use this class if all td should be top aligned */
+
+table.td_top td {
+	vertical-align:top;
+}

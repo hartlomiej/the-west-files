@@ -1,0 +1,17 @@
+var Forum = {
+	toggleMove: function() {
+		var el = $('forum_thread_move');
+		if(el.style.visibility != 'visible') {
+			el.setOpacity(0.9);
+			el.style.visibility = 'visible';
+		}
+		else {
+			el.style.visibility = 'hidden';
+		}
+	}
+};
+
+window.addEvent('domready', function()
+{
+	parent.Fader.removeButton('townforum');
+});

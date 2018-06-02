@@ -1,0 +1,2619 @@
+
+
+.table, .table td {
+	border-collapse:collapse;
+	padding: 2px;
+}
+
+.table th {
+	font-weight:bold;
+	background-image:url(../images/border/table/dark.png);
+	text-align: center;
+}
+
+.table td {
+	background-image:url(../images/border/table/bright.png);
+}
+
+.table td#highlight {
+    background-image:url(../images/muster.jpg);
+}
+
+
+.table .right {
+	text-align: right;
+}
+
+.table .center {
+	text-align: center;
+}
+
+
+
+.border td {
+	border: solid 1px #666;
+}
+.border th {
+	border:1px solid #000;
+}
+
+
+
+.hborder td {
+	border-top: solid 1px #666;
+}
+.hborder th {
+	border-top:1px solid #000;
+}
+
+
+
+table.td_top td {
+	vertical-align:top;
+}
+
+/*
+Standard elements
+*/
+
+body {
+	background:#141e24 url(../images/main/shadow.png) no-repeat fixed top center;
+	padding:11px 0 0 0;
+	margin:0;
+	text-align:center; 
+}
+
+body, p, td, th {
+	font-family:Arial, Verdana, sans-serif;
+	font-size: 13px;
+}
+
+p {
+	margin:0;
+}
+
+a:link	{ font-weight:bold; color: #523F30; text-decoration:none; }
+a:visited	{  font-weight:bold; color: #523F30; text-decoration:none; }
+a:active	{  font-weight:bold; color: #1479A8; text-decoration:none; }
+a:hover { font-weight:bold; color: #1479A8; text-decoration:none; }
+
+h1 {
+	display:none;
+}
+
+h2, h3 {
+	margin:0;
+}
+
+h3 {
+	margin: 5px 0 20px 0;
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 0px;
+}
+
+img   {
+	border: none;
+	vertical-align:middle;
+}
+
+/*
+Generic classes
+*/
+
+.small {
+	font-size: 11px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.mousepopup {
+	border:2px solid #302d28;
+	background-color:#b6ab92;
+	padding:2px;
+	visibility:hidden;
+	text-align:left;
+	position: absolute;
+}
+
+p.desc {
+	font-size: 12px;
+}
+
+table.shadow_table {
+	border-collapse:collapse;
+}
+
+table.shadow_table td.shadow_content {
+	padding:0;
+}
+
+td.border_shadow_left {
+	background-image:url(../images/border/table/border_shadow_left.png);
+	background-repeat:repeat-y;
+	width:6px;
+	padding:0;
+}
+
+td.border_shadow_top {
+	background-image:url(../images/border/table/border_shadow_top.png);
+	padding:0;
+}
+
+td.border_shadow_right {
+	background-image:url(../images/border/table/border_shadow_right.png);
+	background-repeat:repeat-y;
+	width:16px;
+	padding:0;
+}
+
+td.border_shadow_bottom {
+	background-image:url(../images/border/table/border_shadow_bottom.png);
+	background-repeat:repeat-x;
+	height:16px;
+	padding:0;
+}
+
+td.edge_shadow_top_left {
+	background-image:url(../images/border/table/edge_shadow_top_left.png);
+	background-repeat:no-repeat;
+	width:6px;
+	height:6px;
+	padding:0;
+}
+
+td.edge_shadow_top_right {
+	background-image:url(../images/border/table/edge_shadow_top_right.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:6px;
+	padding:0;
+}
+
+td.edge_shadow_bottom_left {
+	background-image:url(../images/border/table/edge_shadow_bottom_left.png);
+	background-repeat:no-repeat;
+	height:16px;
+	width:6px;
+	padding:0;
+}
+
+td.edge_shadow_bottom_right {
+	background-image:url(../images/border/table/edge_shadow_bottom_right.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	padding:0;
+}
+
+td.shadow_content {
+	background-image:url(../images/border/table/bright.png);
+}
+
+
+
+ul.tabs {
+	list-style-type:none;
+	padding:0;
+	margin-top:0;
+}
+
+ul.tabs li {
+	display:inline;
+	cursor:pointer;
+	margin-right:5px;
+}
+
+ul.tabs li.active {
+	border-bottom:2px solid #000;
+}
+
+.item_popup {
+	font-size:14px;
+}
+
+.item_popup td {
+	vertical-align:top;
+}
+
+.item_popup_title {
+	display:block;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.item_popup_type {
+	font-size:12px;
+	font-style:italic;
+	padding-left:8px;
+	display:block;
+	margin-bottom:10px;
+}
+
+.item_popup_level {
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+	margin-top:10px;
+}
+
+.item_popup_level_too_low {
+	color:#d00;
+}
+
+.item_popup .item_popup_damage {
+	font-size:12px;
+	font-weight:bold;
+	color: #00153F;
+}
+
+.item_popup .item_popup_trader_price {
+	font-size:11px;
+	color: #333;
+	font-weight:bold;
+}
+
+.item_popup .item_popup_bonus {
+	font-size:12px;
+	color: #8A6109;
+	font-weight:bold;
+}
+
+.item_popup .item_popup_bonus_attr {
+	font-size:12px;
+	color: #116015;
+	font-weight:bold;
+}
+
+.item_popup .item_popup_bonus_skill {
+	font-size:12px;
+	color: #142F06;
+	font-weight:bold;
+}
+
+.item_popup_arms_bg {
+	background-image:url(../images/inventory/body_arms.png);
+	background-repeat:no-repeat;
+	width:93px;
+	height:138px;
+}
+
+.item_popup_head {
+	background-image:url(../images/inventory/foot_head_animal.png);
+	background-repeat:no-repeat;
+	width:93px;
+	height:93px;
+}
+
+.item_popup_yield {
+	background-image:url(../images/inventory/bag.png);
+	background-repeat:no-repeat;
+	width:73px;
+	height:73px;
+}
+
+
+.bar {
+	position:relative;
+	background-image:url(../images/job/bar.png);
+	width:152px;
+	height:18px;
+}
+
+.bar_fill,.bar_full,.bar_brown {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	height: 16px;
+	background-repeat: repeat-x;
+	z-index: 1;
+}
+
+.bar_fill {
+	background-image: url(../images/job/bar_fill.png);
+}
+
+.bar_brown {
+	background-image: url(../images/job/bar_brown.png);
+}
+
+.bar_full {
+	background-image: url(../images/job/bar_full.png);
+}
+
+.bar_perc {
+	position:absolute;
+	top:1px;
+	left:1px;
+	height:15px;
+	padding-top:1px;
+	width:152px;
+	text-align:center;
+	font-size:13px;
+	font-weight:normal;
+	z-index:2;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.grey {
+	color: #999;
+}
+#border_cap {
+	margin:0 auto; 
+	background:url(../images/main/cap.png) no-repeat center top;
+	width:792px;
+	height:16px;
+	padding:0;
+	font-size:1px; 
+}
+
+#head_container {
+	margin:0 auto;
+	text-align:left;
+	background:url(../images/main/borders.png) no-repeat;
+	width:972px;
+	height:198px; 
+	padding-top:11px;
+	z-index:5;
+}
+
+#head_background {
+	width:950px;
+	height:196px;
+	background:transparent url(../images/main/brown_bg.jpg) no-repeat;
+	margin-left:11px; 
+}
+
+#main_container {
+	margin:-104px auto;
+	text-align:left;
+	background:url(../images/main/borders.png) -86px -105px;
+	background-repeat:no-repeat;
+	width:800px; 
+	height:434px; 
+	padding-top:5px;
+	z-index:1;
+}
+
+#map_place {
+	width:778px;
+	height:377px;
+	margin:0 11px 0 11px;
+}
+
+#map_wrapper {
+	position:relative;
+	width:778px;
+	height:377px;
+	overflow:hidden;
+}
+
+#map_mover {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:2;
+	width:778px;
+	height:377px;
+}
+
+#fade_div {
+	background-color: #000;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:3;
+	width:778px;
+	height:377px;
+}
+
+.map_move_container {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:1;
+}
+
+#map_container {
+	position:relative;
+}
+
+#footer {
+	margin-top:11px;
+	background-image:url(../images/main/footer.png);
+	margin-left:6px;
+	width:788px; 
+	height:40px;
+}
+
+#footer a, #footer a:visited, #footer a:hover, #footer a:focus {
+	text-decoration:none;
+}
+
+#left_menu, #right_menu {
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:128px;
+	top:3px;
+}
+
+#left_menu li, #right_menu li {
+	display:inline; 
+}
+
+#footer_menu_left a img, #footer_menu_right a img {
+	width:37px;	height:37px;
+	background-image: url(../images/main/symbols.png);
+}
+
+#footer_scroll_map_to_char {
+	background-position: 0px 0px;
+}
+
+#footer_scroll_map_to_home_town {
+	background-position: -37px 0px;
+}
+
+#footer_minimap_icon {
+	background-position: -74px 0px;
+}
+
+#footer_forum {
+	background-position: -111px 0px;
+}
+
+#footer_help {
+	background-position: -148px 0px;
+}
+
+#footer_logout {
+	background-position: -185px 0px;
+}
+
+#left_menu li a, #right_menu li a {
+	width:128px;
+	height:25px;
+	display:block;
+	margin-bottom: 1px;
+}
+
+#left_menu li span, #right_menu li span {
+	width:128px;
+	height:25px;
+	display:none;
+}
+
+#left_menu {
+	position:absolute;
+	left:-10px;
+}
+
+#right_menu {
+	position:absolute;
+	right:-10px;
+}
+
+#menus {
+	
+	position:relative;  
+	background-color:#f00;
+	z-index:5;
+}
+
+#character_info {
+	position:relative;
+	background:#0fd;
+	margin: 0 0 0 60px;
+}
+
+#avatar {
+	position:absolute;
+	left:70px;
+	top:3px;
+	height:85px;
+	font-size:13px;
+	font-weight:bold;
+}
+
+#avatar img {
+	height:72px;
+	width:72px;
+	border: 0;
+}
+
+#level_box {
+	background:url(../images/character_bars/level.png);
+	background-repeat: no-repeat;
+	width: 31px;
+	height: 18px;
+	margin-right: 5px;
+	float: left;
+	color: #FFF;
+	line-height: 18px;
+	text-align: center;
+}
+
+#health_bar, #energy_bar, #experience_bar {
+	position:absolute;
+	left:135px;
+	width:104px;
+	height:18px;
+}
+
+#health_bar {
+	top:9px;
+	background:url(../images/character_bars/bars.png);
+}
+
+#energy_bar {
+	top:29px;
+	background:url(../images/character_bars/bars.png) 0 36px;
+}
+
+#experience_bar {
+	top:49px;
+	background:url(../images/character_bars/bars.png) 0 18px;
+}
+
+#health_filler, #energy_filler, #experience_filler {
+	position:absolute;
+	left:2px;
+	top:2px;
+	height:14px;
+	width:1px;
+	font-size:1px; 
+	background:url(../images/character_bars/filler.png);
+}
+
+#health_filler {}
+
+#energy_filler {
+	background-position:0 28px;
+}
+
+#experience_filler {
+	background-position:0 14px;
+}
+
+
+#current_task {
+	position:absolute;
+	right:130px;
+	top:3px;
+	background:url(../images/tasks/idle.png) no-repeat top right;
+	height:83px;
+	font-size:13px;
+	font-weight:bold;
+	padding-top:73px;
+}
+
+#task_time, #cash, #deposit {
+	position:absolute;
+	height:18px;
+	font-size:12px;
+	line-height:18px;
+}
+
+#task_time {
+	top:10px;
+	background:url(../images/money_time.png);
+	text-align:center;
+	font-weight: bold;
+}
+
+#cash, #deposit, #task_time {
+	right:210px;
+	text-align:right;
+	padding-right:4px;
+	width:84px; 
+}
+
+#cash, #deposit {
+	cursor:help;
+}
+
+#cash {
+	top:36px;
+	background:url(../images/money_time.png) 0 18px;
+}
+
+#deposit {
+	top: 56px;
+	background:url(../images/money_time.png) 0 36px;
+}
+
+#map_arrows {
+	position:relative;
+	z-index:5;
+}
+
+#map_arrows a {
+	position:absolute;
+	display:block;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+}
+
+#map_scroll_left {
+	top:178px; 
+	left:0px;
+	background:url(../images/main/map_arrows.png) 20px 20px;
+}
+
+#map_scroll_right {
+	top:178px;
+	right:0;
+	background:url(../images/main/map_arrows.png) 0 0;
+}
+
+#map_scroll_top {
+	top:-5px; 
+	left:379px; 
+	background:url(../images/main/map_arrows.png) 0 20px;
+}
+
+#map_scroll_bottom {
+	top:362px;
+	left:379px;
+	background:url(../images/main/map_arrows.png) 20px 0;
+}
+
+#abdorments {
+	position:relative;
+}
+
+#abdorment_left {
+	position:absolute;
+	left:-73px;
+	top:93px;
+	background:url(../images/main/abdorments.png) 0 42px;
+	width:79px;
+	height:42px;
+}
+
+#abdorment_middle {
+	position:absolute;
+	top:382px;
+	left:320px;
+	background:url(../images/main/abdorments.png);
+	width:137px;
+	height:31px;
+}
+
+#abdorment_right {
+	position:absolute;
+	right:-73px;
+	top:93px;
+	width:79px;
+	height:42px;
+	background:url(../images/main/abdorments.png) 79px 42px;
+}
+
+#window_bar {
+	width: 100%;
+	height: 15px;
+	margin: 25px 1px 0 0;
+}
+
+#window_bar div {
+	width: 160px;
+	height: 25px;
+	float: left;
+	cursor: pointer;
+	background-color: #DDD6C4;
+	border: solid 1px black;
+}
+
+#window_bar div a span {
+	display: block;
+	width: 160px;
+	height: 25px;
+	cursor: pointer;
+}
+
+
+/*
+Throbber is the typical web 2.0 loading animation
+*/
+
+.window_throbber_wrapper {
+	position:relative;
+	text-align:center;
+	top: 150px;
+}
+
+.throbber {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.throbber img {
+	margin: 0 10px 0 0;
+}
+
+/*
+Classes for ajax-windows
+*/
+
+#windows {
+	
+	width:1px;
+	height:1px;
+	margin:85px auto;
+}
+
+.window {
+	position:absolute;
+	top:133px;
+	left:335px;
+	width:731px;
+	height:457px;
+	background:url(../images/background.jpg);
+	z-index:100;
+}
+
+.window_borders {
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:url(../images/main/borders_window.png);
+}
+
+.window_title span {
+	display:none;
+}
+
+.window_close, .window_minimize, .window_closeall {
+	position:absolute;
+	top:5px;
+	display:block;
+	width:21px;
+	height:21px;
+	float:right;
+}
+
+.window_close {
+	right:5px;
+}
+
+.window_minimize {
+	right:25px;
+}
+
+.window_closeall {
+	right:45px;
+}
+
+
+.window_content {
+	position: absolute;
+	overflow: hidden;
+	top: 26px;
+	left: 5px;
+	width: 700px;
+	height: 410px; 
+	text-align: left;
+	padding: 8px 10px;
+}
+
+.window_title {
+	position: absolute;
+	left: 5px;
+	width: 700px;
+	height:25px;
+	margin:5px auto 0;
+	padding:0;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: move;
+}
+
+.circle_title {
+	padding-top:14px;
+	font-size:26px;
+	background-repeat:no-repeat;
+	height:49px; 
+	padding-left:70px;
+	margin: 0 0 5px 0;
+	width:380px;
+}
+
+.window_menu {
+	float:left;
+	margin: 0 20px 0 0;
+}
+
+.window_menu a {
+	display:block;
+	position: relative;
+	font-size:12px;
+	font-weight:bold;
+	background-repeat:no-repeat;
+	background-position:top center;
+	text-align:center;
+	text-decoration:none;
+	color:#000;
+	margin: 0 0 7px 0;
+	padding: 60px 0 0 0;
+	width: 80px;
+}
+
+.window_menu a:visited {
+	color:#000;
+}
+
+.window_menu a:active, .window_menu a:hover, .window_menu a:focus {
+	text-decoration: underline;
+}
+
+.window .tab_container {
+	float: left;
+	width: 575px;
+}
+
+/**
+ * Menu
+ **/
+
+#menu_character a {
+	background:url(../img.php?type=menu&dummy);
+}
+
+#menu_inventory a {
+	background:url(../img.php?type=menu&dummy) 0 -50px;
+}
+
+#menu_saloon a {
+	background:url(../img.php?type=menu&dummy) 0 -75px;
+}
+
+#menu_town a {
+	background:url(../img.php?type=menu&dummy) 0 -100px;
+}
+
+#menu_townforum a {
+	background:url(../img.php?type=menu&dummy) 0 -125px;
+}
+
+#menu_duel a {
+	background:url(../img.php?type=menu&dummy) 0 -175px;
+}
+
+#menu_skill a {
+	background:url(../img.php?type=menu&dummy) 0 -200px;
+}
+
+
+
+#menu_ranking a {
+	background:url(../img.php?type=menu&dummy) 128px 0;
+}
+
+#menu_premium a {
+	background:url(../img.php?type=menu&dummy) 128px -25px;
+}
+
+#menu_messages a {
+	background:url(../img.php?type=menu&dummy) 128px -50px;
+}
+
+#menu_reports a {
+	background:url(../img.php?type=menu&dummy) 128px -100px;
+}
+
+#menu_work a {
+	background:url(../img.php?type=menu&dummy) 128px -150px;
+}
+
+#menu_settings a {
+	background:url(../img.php?type=menu&dummy) 128px -175px;
+}
+
+
+/*
+Map Stuff
+*/
+
+
+.people_popup_list {
+	font-size:0.8em;
+	list-style-type: none;
+	padding:0 0 0 10px;
+	margin: 0;
+	text-align: left;
+}
+
+.people_popup_list li:first-child{
+	padding: 3px 0 0 0;
+}
+
+.people_popup_list_more {
+	font-size:0.7em;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+.tile {
+	width:106px;
+	height:54px;
+	position:absolute;
+	background-repeat:no-repeat;
+}
+
+/*
+Curtain
+*/
+
+#curtain {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:40000;
+	display: none;
+}
+
+#curtain_bg {
+	width:100%;
+	height:100%;
+	background-image:url(../images/curtain_bg.png);
+}
+
+#curtain_box {
+	position:absolute;
+	background-color: #000;
+	border: dashed 3px #FFF;
+	width:440px;
+	height:75px;
+	top: 220px;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	padding: 12px 2px 0 2px;
+	z-index: 10000;
+}
+
+#curtain_box h2 {
+	color: #666;
+	margin: 0;
+	padding: 0;
+}
+
+#minimap_container {
+	z-index: 10;
+	position:absolute;
+	background:url(../images/main/minimap_border.png);
+	width: 650px;
+	height: 292px;
+	top: 233px;
+}
+
+#minimap {
+	position:absolute;
+	top: 11px;
+	left: 11px;
+	width: 432px;
+	height: 270px;
+	background-image:url(../images/main/footer.png);
+}
+#minimap_list {
+	padding-left: 10px;
+	margin-left: 0px;
+}
+#minimap_list li {
+	list-style: none;
+	background-image:url('../images/main/dots.png');
+	background-repeat:no-repeat;
+	padding-left:13px;
+	padding-bottom: 4px;
+}
+
+.minimap_part {
+	position:absolute;
+	width: 216px;
+	height: 135px;
+}
+
+#minimap_cities {
+	position: absolute;
+	z-index: 1;
+	width: 432px; height: 270px;
+}
+
+
+#minimap_own_char {
+	position: absolute;
+	z-index: 2;
+	width: 6px; height: 6px;
+	background:url('../images/main/dots.png') 0px 0px;
+}
+
+#minimap_own_town {
+	position: absolute;
+	z-index: 3;
+	width: 6px; height: 6px;
+	background:url('../images/main/dots.png') 0px -20px;
+}
+
+#minimap_jobs {
+	position: absolute;
+	z-index: 4;
+	width: 432px; height: 270px;
+}
+
+#minimap_rect {
+	position: absolute;
+	z-index: 5;
+	border: 1px solid white;
+	top: 0px;
+	left: 0px;
+	width: 32px;
+	height: 15px;
+}
+
+#minimap_clicker {
+	position:absolute;
+	z-index: 10;
+	top: 11px;
+	left: 11px;
+	width: 432px;
+	height: 270px;
+}
+
+
+#minimap_north, #minimap_east, #minimap_south, #minimap_west {
+	position: absolute;
+	display: block;
+	width: 11px; height: 11px;
+}
+
+#minimap_north {
+	left: 222px; top: 0px;
+}
+
+#minimap_east {
+	left: 443px; top: 140px;
+}
+
+#minimap_south {
+	left: 222px; bottom: 0px;
+}
+
+#minimap_west {
+	left: 0px; top: 140px;
+}
+
+
+#minimap_menu {
+	left: 454px; top:6px; width:190px; height:280px; position: absolute; background-image:url(../images/main/footer.png);
+}
+
+#minimap_micro {
+	position: absolute;
+	width: 181px; height: 49px;
+	left: 4px; bottom: 4px;
+	background:url(../images/minimap/micro.png);
+}
+
+#minimap_micro_box {
+	position: absolute;
+	width: 19px; height: 13px;
+	background:url(../images/main/minimap_micro_box.png);
+}
+
+#minimap_micro_clicker {
+	position:absolute;
+	z-index: 10;
+	width: 100%; height: 100%;
+}
+
+#minimap_e_close {
+	background-image: url('../images/close2.png');
+	width: 20px;
+	height: 20px;
+	top: 0px;
+	left: 170px;
+	position: absolute;
+	display: block;
+}
+.bank_title {
+	background-image: url(../images/buildings/bank1.png);
+	background-repeat: no-repeat;
+	padding-left: 170px;
+	height: 110px;
+	margin-bottom: 10px;
+}
+
+.bank_title span {
+	font-size:14px;	
+}
+
+.splitLayerBank {
+	float:left;
+	width:335px;
+}
+
+.splitLayerDeposit {
+	float:left;
+	width:360px;
+}
+
+.bank_table {
+	width:305px;
+	height:270px;
+}
+
+.deposit_table {
+	width:340px;
+}
+
+.deposit_title, .city_deposit_title {
+	background-image: url(../images/bgdark.png);
+	border-bottom: 1px solid #000;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	height: 25px;
+	font-size: 16px;
+}
+
+.deposit_overview {
+	height: 70px;
+}
+
+.deposit_payin {
+	border-bottom:1px solid #000;
+	border-top:1px solid #000;
+	height: 35px;
+	padding-top: 5px;
+}
+
+.money_big {
+	text-align: right;
+	font-size: 25px;
+}
+
+.money_table {
+	width: 100%;
+}
+
+.money_type {
+	text-align: left;
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.money_image {
+	width: 65px;
+}
+
+.bank_deposit {
+	background-image: url(../images/bgdark.png);
+	text-align: center;
+}
+
+.city_deposit_log {
+	height: 258px;
+	width: 338px;
+	overflow: auto;
+}
+
+.city_deposit_log_table {
+	border-collapse:collapse;
+	width: 100%;
+}
+
+.city_deposit_log_table td {
+	border-bottom: 1px solid #000;
+	font-size: 12px;
+}
+
+.deposit_log_col_time {
+	width: 140px;
+}
+#char_avatar {
+	float: left;
+	margin-left: 15px;
+}
+
+#char_info {
+	margin-left: 20px;
+	float: left;
+	font-size: 14px;
+	width: 265px;
+}
+
+#char_info th {
+	text-align: left;
+	font-weight: bold;
+	width: 140px;
+}
+
+#char_info th, #char_info td {
+	padding: 2px;
+}
+
+
+#cityhall_menu a {
+	background-image: url('/images/menu_buttons/cityhall.png');
+}
+
+#cityhall_menu #cityhall_menu_build {
+	background-position: 10px 0;
+}
+
+#cityhall_menu #cityhall_menu_citizen {
+	background-position: 10px -100px;
+}
+
+#cityhall_menu #cityhall_menu_invitation {
+	background-position: 10px -200px;
+}
+
+#cityhall_menu #cityhall_menu_administration {
+	background-position: 10px -300px;
+}
+
+#cityhall_menu a:hover#cityhall_menu_build, #cityhall_menu #cityhall_menu_build.active {
+	background-position: -70px 0;
+}
+
+#cityhall_menu a:hover#cityhall_menu_citizen, #cityhall_menu #cityhall_menu_citizen.active {
+	background-position: -70px -100px;
+}
+
+#cityhall_menu a:hover#cityhall_menu_invitation, #cityhall_menu #cityhall_menu_invitation.active {
+	background-position: -70px -200px;
+}
+
+#cityhall_menu a:hover#cityhall_menu_administration, #cityhall_menu #cityhall_menu_administration.active {
+	background-position: -70px -300px;
+}
+
+#tab_build,#tab_citizen,#tab_invitation,#tab_administration,#tab_forum {
+	display: none;
+	width: 600px;
+	float: left;
+}
+
+#tab_citizen {
+	height: 415px;
+}
+
+.citizen_table_layer {
+	overflow: auto;
+	height: 253px;
+	background-image: url(../images/border/table/bright.png);
+}
+
+#tab_build {
+	display: block;
+}
+
+#cityhall_table th {
+	text-align: left;
+	font-weight: bold;
+	background-image: url(../images/border/table/dark.png);
+	border-bottom: 1px solid #000;
+	padding-left: 10px;
+}
+
+#cityhall_table td {
+	background-image: url(../images/border/table/bright.png);
+	padding: 5px 10px;
+}
+
+#invitation_name {
+	width: 200px;
+	font-weight: normal;
+}
+
+#cityhall_table {
+	border-collapse: collapse;
+}
+
+#invitations table {
+	border-spacing: 10px 0;
+}
+
+#invitations td {
+	width: 100px;
+	height: 100px;
+	font-size: 13px;
+	text-align: center;
+}
+
+#invitations div {
+	position: relative;
+	width: 87px;
+	height: 63px;
+}
+
+#invitations div img#cancel_button {
+	position: absolute;
+	left: 72px;
+	top: 36px;
+}
+
+#citizen_table th {
+	text-align: left;
+	font-weight: bold;
+	background-image: url(../images/border/table/dark.png);
+	text-align: center;
+	border: 1px solid #000;
+}
+
+#citizen_table td {
+	border-bottom: dashed 1px gray;
+	padding: 0 10px;
+	background-image: url(../images/border/table/bright.png);
+}
+
+#citizen_table .right {
+	text-align: right;
+}
+
+#citizen_table .center {
+	text-align: center;
+}
+
+#citizen_table,#citizen_table td {
+	border: solid 1px #666;
+	border-collapse: collapse;
+}
+
+.cityhall_build_table,.cityhall_build_table tr,.cityhall_build_table th
+	{
+	border-collapse: collapse;
+}
+
+.cityhall_build_table th,.cityhall_build_table td {
+	font-weight: bold;
+	padding: 2px 4px;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+#build_table_bottom td {
+	text-align: right;
+	background-image: url(../images/border/table/dark.png);
+	padding: 3px 6px;
+}
+
+.cityhall_build_table th,#build_table_bottom td {
+	background-image: url(../images/border/table/dark.png);
+}
+
+.cityhall_build_table td {
+	background-image: url(../images/border/table/bright.png);
+}
+
+#cityhall_build_form {
+	margin-top: 10px;
+}
+
+.bars td {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#build_points_div tr,#build_points_div td {
+	text-align: center;
+}
+
+#build_town_dollar,#build_points,#build_motivation {
+	cursor: default;
+}
+
+#cityhall_build_topic {
+	padding-top: 14px;
+	font-size: 24px;
+	background-repeat: no-repeat;
+	height: 49px; 
+	padding-left: 70px;
+	margin: 0;
+	margin-bottom: 5px;
+	width: 380px;
+}
+
+.cityhall_own_box div {
+	float: right;
+	text-align: center;
+	padding: 5px;
+}
+
+.cityhall_own_box {
+	clear: right;
+}
+
+.town_rename_name {
+	width: 160px;
+	background-image: url(../images/background.jpg);
+	border: solid 1px #000;
+	margin-left: 15px;
+}
+
+.town_rename_layer {
+	font-weight: bold;
+	font-size: 13px;
+	padding: 8px;
+	width: 380px;
+}
+
+.window_citizen {
+	position: absolute;
+	text-align: left;
+	width: 250px;
+	height: 160px;
+}
+
+.city_founder {
+	background: url('../images/town/cityhall/city_rank.png') -18px 0px no-repeat;
+}
+
+.city_councillor {
+	background: url('../images/town/cityhall/city_rank.png') 0px 0px no-repeat;
+}
+
+#duel_menu a {
+	background-image: url('/images/menu_buttons/duel.png');
+}
+
+#duel_menu #duel_menu_duel {
+    background-position: 10px 0;
+}
+
+#duel_menu a:hover#duel_menu_duel, #duel_menu #duel_menu_duel.active {
+    background-position: -70px 0;
+}
+
+#duel_div {
+	padding: 0 0;
+	width:600px;
+}
+
+#duel_table th {
+	background-image:url(../images/border/table/dark.png);
+	text-align: center;
+	border:1px solid #000;
+}
+
+#duel_table td {
+	border-bottom: dashed 1px gray;
+	padding: 0 10px;
+	background-image:url(../images/border/table/bright.png);
+	height:121px;
+}
+
+#duel_table, #duel_table td {
+	border: solid 1px #666;
+	border-collapse:collapse;
+	font-weight:bold;
+}
+
+#tab_duel {
+	display: none;
+	float: left;
+	width: 590px;
+}
+
+#tab_duel {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#tab_duel h2 {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+.duelSkillBox {
+	text-align: center;
+	width: 125px;
+	height: 98px;
+	line-height: 25px;
+	float: left;
+}
+
+.duelSkillBoxBig {
+	width: 210px;
+}
+
+#duel_weapon_div {
+	float: left;
+}
+table.rooms {
+	border-collapse:collapse;
+	width:100%;
+}
+
+table.rooms td {
+	border-bottom:1px solid #000;
+}
+
+.rooms td.costs {
+	font-size:30px;
+	width:80px;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+.rooms .room_name {
+	display:block;
+	font-size:20px;
+	margin-bottom:4px;
+}
+
+.rooms tr.na td {
+	color:#888;
+}
+
+.box_rooms {
+	left:185px;
+	top:15px;
+	position:absolute;
+}
+
+.hotel_task_queue {
+	position:absolute;
+	top:305px;
+	left: 20px;
+}
+
+.hotel_title span {
+	font-size:14px;	
+}
+
+.hotel_image {
+	margin-right:20px;
+	vertical-align:top;
+	float:left;
+}
+
+.hotel_name {
+	left:20px;
+	top:140px;
+	position:absolute;
+	width:160px;
+}
+#bag {
+	width:330px;
+	height:294px;
+	background-image:url(../images/bgdark.png);
+	float:left;
+	padding-left:5px;
+	padding-top:5px;
+	overflow:auto;
+}
+
+#bag .bag_item {
+	background-image:url(../images/inventory/bag.png);
+	width:73px;
+	height:73px;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+
+#wear {
+	float:left;
+}
+
+#invitationsInvitationList table {
+	border-spacing:10px 0;
+}
+
+#invitationsInvitationList td {
+	width: 100px;
+	height: 100px;
+	font-size: 13px;
+	text-align: center;
+}
+
+#invitationsInvitationList div {
+	position:relative;
+	width: 87px;
+	height: 63px;
+}
+
+#invitationsInvitationList div img#cancel_button {
+	position:absolute;
+	left:72px;
+	top: 36px;
+}
+
+#invitationsInvitationList div img#accept_button {
+	position:absolute;
+	left:72px;
+	top: 0px;
+}
+.bars tr td {
+	font-weight:bold;
+	font-size:18px;
+}
+
+.bars tr td img {
+	padding-right: 10px;
+}
+
+.job_points_div tr, .job_points_div td {
+	text-align:center;
+}
+
+.job_points_div img {
+	width: 55px;
+	height: 55px;	
+	border: 0;
+}
+
+.job_value, .job_exp, .job_luck, .job_danger, .job_motivation {
+	cursor:default;
+}
+
+.job_points_div {
+	clear: both;
+}
+
+.jobYield {
+	width:470px;
+	height:55px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.jobYield div {
+	float: left;
+	width:43px;
+	height:43px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	margin-right: 5px;
+	font-style: normal;
+	background-image:url(../images/inventory/yield.png);
+	background-repeat: no-repeat;
+}
+
+.jobYield .bag_item img {
+	width:43px;
+	height:43px;
+}
+
+.jobDescription {
+	width:470px;
+	height:70px;
+	font-size:14px;
+	padding-top: 5px;
+}
+
+#message_menu a {
+	background-image: url('/images/menu_buttons/messages.png');
+}
+
+#message_menu #message_menu_messages {
+	background-position: 10px 0;
+}
+
+#message_menu #message_menu_write {
+	background-position: 10px -100px;
+}
+
+#message_menu #message_menu_block {
+	background-position: 10px -200px;
+}
+
+#message_menu a:hover#message_menu_messages, #message_menu #message_menu_messages.active {
+	background-position: -70px 0;
+}
+
+#message_menu a:hover#message_menu_write, #message_menu #message_menu_write.active {
+	background-position: -70px -100px;
+}
+
+#message_menu a:hover#message_menu_block, #message_menu #message_menu_block.active {
+	background-position: -70px -200px;
+}
+
+#tab_write, #tab_block {
+	display:none;
+}
+
+#addressbook {
+	display:none;
+	width:220px;
+	border:1px solid #000;
+	background-image:url(../images/muster.jpg);
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#addressbook_list {
+	height:280px;
+}
+
+#addressbook_list_table th {
+	text-align:left;
+	font-weight:bold;
+	background-image:url(../images/border/table/dark.png);
+	text-align: center;
+	border:1px solid #000;
+}
+
+#addressbook_list_table td {
+	border-bottom: dashed 1px gray;
+	padding: 0 10px;
+	background-image:url(../images/border/table/bright.png);
+}
+
+#addressbook_list_table, #addressbook_list_table td {
+	border: solid 1px #666;
+	border-collapse:collapse;
+}
+
+#preview_layer {
+	display: none;
+	background-image:url(../images/border/table/dark.png);
+	border:1px solid #000;
+	height: 125px;
+	overflow: scroll;
+}
+
+#message_table td {
+	font-size:13px;
+	padding: 1px;
+}
+
+#read_table {
+	width:545px;
+	border-collapse:collapse;
+	background-image:url(../images/border/table/bright.png);
+}
+
+#read_table td, #read_table th {
+	border:1px solid #000;
+}
+
+#read_table #read_table_subject {
+	width:150px;
+}
+
+#read_table th {
+	text-align:left;
+}
+
+#read_table th {
+	background-image:url(../images/border/table/dark.png);
+}
+
+#read_table textarea {
+	background-image:url(../images/muster.jpg);
+}
+
+#read_table_posts {
+	border-collapse:collapse;
+	width:100%;
+}
+
+#read_table_posts td {
+	border:0;
+	padding: 0 10px;
+}
+
+#read_table_posts td.post_name {
+	background-image:url(../images/border/table/dark.png);
+	font-weight:bold;
+}
+
+#read_table_posts td.post_date {
+	background-image:url(../images/border/table/dark.png);
+	font-weight:bold;
+	text-align: right;
+}
+
+#write_table textarea, #write_table input {
+	background-image:url(../images/muster.jpg);
+	border:1px solid #000;
+}
+
+#write_table textarea {
+	width:100%;
+	border-left:0;
+	border-right:0;
+}
+
+#write_table {
+	border-collapse:collapse;
+	background-image:url(../images/border/table/bright.png);
+	width:550px;
+}
+
+
+#answer_field_row, #answer_button_row {
+	display:none;
+}
+
+.messages_blocked_layer {
+	width: 300px;
+	overflow: auto;
+	height: 287px
+}
+
+.messages_blocked_layer table {
+	width: 100%;
+}
+
+
+#premium_menu a {
+	background-image: url('/images/menu_buttons/premium.png');
+}
+
+#premium_menu #premium_menu_use {
+	background-position: 10px 0;
+}
+
+#premium_menu #premium_menu_log {
+	background-position: 10px -200px;
+}
+
+#premium_menu a:hover#premium_menu_use, #premium_menu #premium_menu_use.active {
+	background-position: -70px 0;
+}
+
+#premium_menu a:hover#premium_menu_log, #premium_menu #premium_menu_log.active {
+	background-position: -70px -200px;
+}
+
+span.premium_days {
+	font-size: 12px;
+}
+
+#char_name {
+	font-weight:bold;
+	display:block;
+	font-size:1.2em;
+}
+
+#town, #level, #jump_to_player, #duel_level {
+	display:block;
+}
+.rewardOption {
+	float: left;
+	border: solid 3px #333;
+	padding: 10px;
+	margin: 5px 15px 5px 0;
+	background-image:url(../images/border/table/dark.png);
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.rewardOptionSelected {
+	border: solid 3px #2C8F30;
+	background-image:url(../images/border/table/bright.png);
+}
+
+.rewardOption .bag_item {
+	background-image:url(../images/inventory/bag.png);
+	width:73px;
+	height:73px;
+	float:left;
+	margin: 5px 5px 0 0;
+}
+
+#questButtons img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#questPortrait {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.jobYield div span {
+	cursor: help;
+}
+#ranking_menu a {
+	background-image: url('/images/menu_buttons/ranking.png');
+}
+
+#ranking_menu #menu_overview {
+	background-position: 10px 0;
+}
+
+#ranking_menu #menu_duels {
+	background-position: 10px -100px;
+}
+
+#ranking_menu #menu_cities {
+	background-position: 10px -200px;
+}
+
+#ranking_menu #menu_skills {
+	background-position: 10px -300px;
+}
+
+#ranking_menu a:hover#menu_overview, #ranking_menu #menu_overview.active {
+	background-position: -70px 0;
+}
+
+#ranking_menu a:hover#menu_duels, #ranking_menu #menu_duels.active {
+	background-position: -70px -100px;
+}
+
+#ranking_menu a:hover#menu_cities, #ranking_menu #menu_cities.active {
+	background-position: -70px -200px;
+}
+
+#ranking_menu a:hover#menu_skills, #ranking_menu #menu_skills.active {
+	background-position: -70px -300px;
+}
+
+/*.window_menu a#menu_overview.active, .window_menu a:hover#menu_overview {
+    background-image:url(../images/menu_buttons/reports/filter_active.png) !important;
+}
+
+.window_menu a#menu_overview {
+    background-image:url(../images/menu_buttons/reports/filter_inactive.png);
+}
+
+.window_menu a#menu_cities.active, .window_menu a:hover#menu_cities {
+    background-image:url(../images/menu_buttons/reports/other_active.png) !important;
+}
+
+.window_menu a#menu_cities {
+    background-image:url(../images/menu_buttons/reports/other_inactive.png);
+}
+
+.window_menu a#menu_skills.active, .window_menu a:hover#menu_skills {
+    background-image:url(../images/menu_buttons/reports/job_active.png) !important;
+}
+
+.window_menu a#menu_skills {
+    background-image:url(../images/menu_buttons/reports/job_inactive.png);
+}
+
+.window_menu a#menu_duels.active, .window_menu a:hover#menu_duels {
+    background-image:url(../images/menu_buttons/reports/duel_active.png) !important;
+}
+
+.window_menu a#menu_duels {
+    background-image:url(../images/menu_buttons/reports/duel_inactive.png);
+}
+*/
+input.ranking_extra {
+    background-image:url(../images/muster.jpg);
+    border:1px solid #000;
+    margin-top: 3px;
+}
+
+#ranking_table_extra select {
+    background-color: #ded8c8;
+    border:1px solid #000;
+}
+
+#ranking_table th {
+	text-align:left;
+	font-weight:bold;
+	background-image:url(../images/border/table/dark.png);
+	text-align: center;
+	border:1px solid #000;
+}
+
+#ranking_table td {
+	border-bottom: dashed 1px gray;
+	padding: 0 10px;
+	background-image:url(../images/border/table/bright.png);
+}
+
+#ranking_table td#highlight {
+    background-image:url(../images/muster.jpg);
+}
+
+#ranking_table .right {
+	text-align: right;
+}
+
+#ranking_table .center {
+	text-align: center;
+}
+
+#ranking_table, #ranking_table td {
+	border: solid 1px #666;
+	border-collapse:collapse;
+}
+
+.ranking_attribut {
+	font-weight: bold;
+	border: 1px solid black;
+	background-image:url(../images/border/table/dark.png);
+}
+
+.ranking_skill {
+	padding-left: 5px;
+}
+#report_menu a {
+	background-image: url('/images/menu_buttons/reports.png');
+}
+
+#report_menu #menu_reports {
+	background-position: 10px 0px;
+}
+
+#report_menu #menu_job {
+	background-position: 10px -100px;
+}
+
+#report_menu #menu_duel {
+	background-position: 10px -200px;
+}
+
+#report_menu #menu_other {
+	background-position: 10px -300px;
+}
+
+#report_menu a:hover#menu_reports, #report_menu #menu_reports.active {
+	background-position: -70px 0px;
+}
+
+#report_menu a:hover#menu_job, #report_menu #menu_job.active {
+	background-position: -70px -100px;
+}
+
+#report_menu a:hover#menu_duel, #report_menu #menu_duel.active {
+	background-position: -70px -200px;
+}
+
+#report_menu a:hover#menu_other, #report_menu #menu_other.active {
+	background-position: -70px -300px;
+}
+
+#tab_reports {
+	margin-left:20px;
+	float:left;
+}
+
+#report_table td {
+	font-size:13px;
+	padding: 1px;
+}
+
+.report_head {
+	font-weight:bold;
+	background-image:url(../images/border/table/dark.png);
+}
+
+.date_received {
+	padding:0 30px 0 3px;
+}
+
+.report_title {
+	padding: 5px 15px;
+}
+#saloon_menu a {
+	background-image: url('/images/menu_buttons/saloon.png');
+}
+
+#saloon_menu #saloon_menu_saloon {
+	background-position: 10px 0;
+}
+
+#saloon_menu #saloon_menu_questlog {
+	background-position: 10px -100px;
+}
+
+#saloon_menu a:hover#saloon_menu_saloon, #saloon_menu #saloon_menu_saloon.active {
+	background-position: -70px 0;
+}
+
+#saloon_menu a:hover#saloon_menu_questlog, #saloon_menu #saloon_menu_questlog.active {
+	background-position: -70px -100px;
+}
+
+#tab_questlog, #tab_saloon {
+	display: none;
+	float: left;
+	width: 590px;
+}
+
+#tab_saloon {
+	display: block;
+}
+
+#tab_questlog a, #tab_saloon a {
+	color: #311F19;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#tab_questlog a:hover, #tab_questlog a:focus, #tab_questlog a:active,
+#tab_saloon a:hover, #tab_saloon a:focus, #tab_saloon a:active {
+	color: #523F30;
+}
+
+.questlog_header {
+	font-weight:bold;
+	background-image:url(../images/border/table/dark.png);
+	border:1px solid #000;
+	padding: 2px;
+	width: 554px;
+	margin-top: 10px;
+}
+
+.questlog_header img {
+	padding-right: 10px;
+}
+
+.questlog_entrie {
+	background-image:url(../images/border/table/bright.png);
+	border: 1px solid #666;
+	border-top: 0;
+	padding: 4px;
+	width: 550px;
+	line-height: 20px;
+}
+
+.questlog_entrie a {
+	display: block;
+	height: 20px;
+	padding-left: 16px;	
+}
+
+#tab_questlog .questlog_entrie a.questicon_mini_failed:link, #tab_saloon .questlog_entrie a.questicon_mini_failed:link {
+	color: #6F6F6F;
+}
+
+#tab_questlog .questlog_entrie a.questicon_mini_failed:active, #tab_saloon .questlog_entrie a.questicon_mini_failed:active,
+#tab_questlog .questlog_entrie a.questicon_mini_failed:hover, #tab_saloon .questlog_entrie a.questicon_mini_failed:hover {
+	color: #807F7F;
+}
+
+#foldingAll {
+	float: left;
+	width: 100px;
+}
+
+#questCapacity {
+	text-align: right;
+	font-weight: bold;
+	width: 550px;
+}
+
+.questEmployerOverviewBox {
+	position:absolute;
+	width: 575px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-image:url(../images/quest/overview/background.jpg);
+	border: 2px solid #000;
+}
+
+.saloon_duel_table th {
+	background-image:url(../images/border/table/dark.png);
+	text-align: center;
+	border:1px solid #000;
+}
+
+.saloon_duel_table td {
+	border-bottom: dashed 1px gray;
+	padding: 0 10px;
+	background-image:url(../images/border/table/bright.png);
+}
+
+.saloon_duel_table, .saloon_duel_table td {
+	border: solid 1px #666;
+	border-collapse:collapse;
+}
+
+.saloon_duel_layer {
+	overflow: auto;
+	height: 230px;
+}
+
+.questicon_mini_failed {
+	background-position: 0 -40px;
+	background-image:url(../images/quest/overview/highlights/mini.png);
+	background-repeat: no-repeat;
+}
+
+.questicon_mini_new {
+	background-position: 0 -20px;
+	background-image:url(../images/quest/overview/highlights/mini.png);
+	background-repeat: no-repeat;
+}
+
+.questicon_mini_done {
+	background-position: 0 0;
+	background-image:url(../images/quest/overview/highlights/mini.png);
+	background-repeat: no-repeat;
+}
+#settings_menu a {
+	background-image: url('/images/menu_buttons/settings.png');
+}
+
+/*#settings_menu #menu_profile {
+	background-position: 10px -500px;
+}*/
+
+#settings_menu #menu_avatar {
+	background-position: 10px 0;
+}
+
+/*#settings_menu #menu_settings {
+	background-position: 10px -300px;
+}*/
+
+#settings_menu #menu_account {
+	background-position: 10px -100px;
+}
+
+#settings_menu #menu_support {
+	background-position: 10px -200px;
+}
+
+/*#settings_menu a:hover#menu_profile, #settings_menu #menu_profile.active {
+	background-position: -70px -500px;
+}*/
+
+#settings_menu a:hover#menu_avatar, #settings_menu #menu_avatar.active {
+	background-position: -70px 0;
+}
+
+/*#settings_menu a:hover#menu_settings, #settings_menu #menu_settings.active {
+	background-position: -70px -300px;
+}*/
+
+#settings_menu a:hover#menu_account, #settings_menu #menu_account.active {
+	background-position: -70px -100px;
+}
+
+#settings_menu a:hover#menu_support, #settings_menu #menu_support.active {
+	background-position: -70px -200px;
+}
+
+#tab_settings, #tab_account, #tab_support {
+	display:none;
+}
+
+.avatar_small_text {
+	font-size:small;
+}
+
+.avatar_bold_text {
+	font-weight:bold;
+}
+.task_control_container {
+	position:relative; 
+	margin-top:10px;
+}
+
+.task_control_container .task_error {
+	margin-top:20px;
+	display:none;
+}
+
+.task_control_container .task_error table table {
+	padding:5px;
+	width:650px;
+}
+
+.task_control_container .task_control {
+	position:relative;
+	margin-top:5px;
+}
+
+.task_control_container .task_control .task_queue_container {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.task_control_container .task_control .start_div {
+	position:absolute;
+	top:0;
+	left:450px;
+}
+
+.town_found_name {
+	background-image: url(../images/border/table/bright.png);
+	border: solid 1px #000;
+	padding: 2px 5px;
+}
+
+.town_overview_center {
+	width:656px;
+	margin:0px auto;
+	text-align: center;
+}
+
+.town_overview_citizen, .town_overview_points {
+	width:157px;
+	height:19px;
+	text-align:center;
+	color:#fff;
+	background-image:url(../images/town/townbutton.png);
+	padding:0;
+	float:left;
+	padding: 3px 0;
+}
+
+.town_overview_points {
+	float: right;
+}
+
+.empty {
+	width:645px;
+	height:375px;
+	left:0px;
+	position:relative;
+	z-index:10;
+}
+
+.town_background {
+	background-image:url(../images/town/background.jpg);
+	width:645px;
+	height:375px;
+	top:0px;
+	position:relative;
+}
+
+.heading_found {
+	background-image: url(../images/jobs/found.png);
+}
+
+.ghostTownLayer {
+	margin: 10px 0 0 20px;
+}
+#trader_inv_div h2, #own_inv_div h2 {
+	font-size:18px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+.bag_item {
+	background-image:url(../images/inventory/bag.png);
+	background-repeat:no-repeat;
+	width:73px;
+	height:73px;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+	font-size:14px;
+	text-align:center;
+}
+
+td {
+	vertical-align:top;
+}
+
+#sell_popup, #buy_popup {
+	border:2px solid #302d28;
+	background-color:#b6ab92;
+	position:absolute;
+	z-index:100;
+	display:none;
+	padding:3px;
+}
+
+.price {
+	font-size:12px;
+}
+
+.own_inv {
+	position: relative;
+	width:329px;
+	height:371px;
+	background-image:url(../images/bgdark.png);
+	overflow:auto;
+	padding: 4px 0 0 4px;
+}
+
+.trader_inv {
+	position: relative;
+	width:329px;
+	height:271px;
+	background-image:url(../images/bgdark.png);
+	overflow:auto;
+	padding: 4px 0 0 4px;
+}
+#wear {
+	width:293px;
+	height:348px;
+	background-image:url(../images/bgdark.png);
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.wear_head {
+	width:93px;
+	height:93px;
+	background-image:url(../images/inventory/foot_head_animal.png);
+	position:absolute;
+	left:100px;
+	top:5px;
+}
+
+.wear_neck {
+	width:73px;
+	height:73px;
+	background-image:url(../images/inventory/bag.png);
+	position:absolute;
+	left:20px;
+	top:25px;
+}
+
+.wear_left_arm {
+	width:93px;
+	height:138px;
+	background-image:url(../images/inventory/body_arms.png);
+	position:absolute;
+	left:200px;
+	top:105px;
+}
+
+.wear_right_arm {
+	width:93px;
+	height:138px;
+	background-image:url(../images/inventory/body_arms.png);
+	position:absolute;
+	left:0px;
+	top:105px;
+}
+
+.wear_body {
+	width:93px;
+	height:138px;
+	background-image:url(../images/inventory/body_arms.png);
+	position:absolute;
+	left:100px;
+	top:105px;
+}
+
+.wear_yield {
+	width:73px;
+	height:73px;
+	background-image:url(../images/inventory/bag.png);
+	position:absolute;
+	left:20px;
+	top:250px;
+}
+
+.wear_foot {
+	width:93px;
+	height:93px;
+	background-image:url(../images/inventory/foot_head_animal.png);
+	position:absolute;
+	left:100px;
+	top:250px;
+}
+
+.wear_animal {
+	width:93px;
+	height:93px;
+	background-image:url(../images/inventory/foot_head_animal.png);
+	position:absolute;
+	left:200px;
+	top:250px;
+}
+
+.wear_mousepopup {
+	border:2px solid #302d28;
+	background-color:#b6ab92;
+	padding:2px;
+}
+
+.wear_head_highlight, .wear_foot_highlight, .wear_animal_highlight {
+	background-image:url(../images/inventory/highlight/foot_head_animal.png);
+}
+
+.wear_neck_highlight, .wear_yield_highlight {
+	background-image:url(../images/inventory/highlight/bag.png);
+}
+
+.wear_left_arm_highlight, .wear_right_arm_highlight, .wear_body_highlight {
+	background-image:url(../images/inventory/highlight/body_arms.png);
+}
+.skill_content_layer_middle {
+	width: 330px;
+	float: left;
+	display: block;
+}
+
+.skill_content_reskill_info, .skill_content_skill_info {
+	margin-left: 35px;
+}
+
+.skill_icon_layer {
+	float: left;
+}
+
+.skill_icon_reskill {
+	padding-left: 40px;
+	height: 27px;
+	background-image: url(../images/skill/reskill_icons.png);
+	line-height: 25px;
+	background-repeat: no-repeat;
+	float: left;
+	width: 170px;
+}
+
+.skill_icon_reskill_current {
+	background-position: 0px 0px;
+}
+
+.skill_icon_reskill_attribute {
+	background-position: 0px -27px;
+}
+
+.skill_icon_reskill_skill {
+	background-position: 0px -54px;
+}
+
+.skill_cost_reskill {
+	float: left;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.skill_content_reskill_title {
+	margin-bottom: 10px;
+}
+
+.skill_toggle_item_bonus {
+	font-weight: bold;
+	font-size: 16px;
+	float: right;
+	margin-top: 5px;
+}
+
+.skill_toggle_item_bonus label {
+	cursor: pointer;
+}
+
+.skill_attribute_skills {
+	clear:both;
+	padding: 0 0 2px 0;
+	margin-top: 35px;
+}
+
+.skill_attribute_skills img {
+	width: 55px;
+	height: 55px;
+	border: 0;
+	padding: 0 0 0 4px;
+}
+
+.skill_attribute_skills td {
+	line-height: 52px;
+}
+
+.skill_points {
+	font-size: 16px;
+	font-weight: bold;
+	width: 215px;
+	float: left;
+	text-align: center;
+}

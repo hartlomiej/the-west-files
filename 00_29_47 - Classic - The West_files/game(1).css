@@ -1,0 +1,298 @@
+/*
+Standard elements
+*/
+
+body {
+	background:#141e24 url(../images/main/shadow.png) no-repeat fixed top center;
+	padding:11px 0 0 0;
+	margin:0;
+	text-align:center; /* required for IE to center */
+}
+
+body, p, td, th {
+	font-family:Arial, Verdana, sans-serif;
+	font-size: 13px;
+}
+
+p {
+	margin:0;
+}
+
+a:link	{ font-weight:bold; color: #523F30; text-decoration:none; }
+a:visited	{  font-weight:bold; color: #523F30; text-decoration:none; }
+a:active	{  font-weight:bold; color: #1479A8; text-decoration:none; }
+a:hover { font-weight:bold; color: #1479A8; text-decoration:none; }
+
+h1 {
+	display:none;
+}
+
+h2, h3 {
+	margin:0;
+}
+
+h3 {
+	margin: 5px 0 20px 0;
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 0px;
+}
+
+img   {
+	border: none;
+	vertical-align:middle;
+}
+
+/*
+Generic classes
+*/
+
+.small {
+	font-size: 11px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.mousepopup {
+	border:2px solid #302d28;
+	background-color:#b6ab92;
+	padding:2px;
+	visibility:hidden;
+	text-align:left;
+	position: absolute;
+}
+
+p.desc {
+	font-size: 12px;
+}
+
+table.shadow_table {
+	border-collapse:collapse;
+}
+
+table.shadow_table td.shadow_content {
+	padding:0;
+}
+
+td.border_shadow_left {
+	background-image:url(../images/border/table/border_shadow_left.png);
+	background-repeat:repeat-y;
+	width:6px;
+	padding:0;
+}
+
+td.border_shadow_top {
+	background-image:url(../images/border/table/border_shadow_top.png);
+	padding:0;
+}
+
+td.border_shadow_right {
+	background-image:url(../images/border/table/border_shadow_right.png);
+	background-repeat:repeat-y;
+	width:16px;
+	padding:0;
+}
+
+td.border_shadow_bottom {
+	background-image:url(../images/border/table/border_shadow_bottom.png);
+	background-repeat:repeat-x;
+	height:16px;
+	padding:0;
+}
+
+td.edge_shadow_top_left {
+	background-image:url(../images/border/table/edge_shadow_top_left.png);
+	background-repeat:no-repeat;
+	width:6px;
+	height:6px;
+	padding:0;
+}
+
+td.edge_shadow_top_right {
+	background-image:url(../images/border/table/edge_shadow_top_right.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:6px;
+	padding:0;
+}
+
+td.edge_shadow_bottom_left {
+	background-image:url(../images/border/table/edge_shadow_bottom_left.png);
+	background-repeat:no-repeat;
+	height:16px;
+	width:6px;
+	padding:0;
+}
+
+td.edge_shadow_bottom_right {
+	background-image:url(../images/border/table/edge_shadow_bottom_right.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	padding:0;
+}
+
+td.shadow_content {
+	background-image:url(../images/border/table/bright.png);
+}
+
+
+
+ul.tabs {
+	list-style-type:none;
+	padding:0;
+	margin-top:0;
+}
+
+ul.tabs li {
+	display:inline;
+	cursor:pointer;
+	margin-right:5px;
+}
+
+ul.tabs li.active {
+	border-bottom:2px solid #000;
+}
+
+.item_popup {
+	font-size:14px;
+}
+
+.item_popup td {
+	vertical-align:top;
+}
+
+.item_popup_title {
+	display:block;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.item_popup_type {
+	font-size:12px;
+	font-style:italic;
+	padding-left:8px;
+	display:block;
+	margin-bottom:10px;
+}
+
+.item_popup_level {
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+	margin-top:10px;
+}
+
+.item_popup_level_too_low {
+	color:#d00;
+}
+
+.item_popup .item_popup_damage {
+	font-size:12px;
+	font-weight:bold;
+	color: #00153F;
+}
+
+.item_popup .item_popup_trader_price {
+	font-size:11px;
+	color: #333;
+	font-weight:bold;
+}
+
+.item_popup .item_popup_bonus {
+	font-size:12px;
+	color: #8A6109;
+	font-weight:bold;
+}
+
+.item_popup .item_popup_bonus_attr {
+	font-size:12px;
+	color: #116015;
+	font-weight:bold;
+}
+
+.item_popup .item_popup_bonus_skill {
+	font-size:12px;
+	color: #142F06;
+	font-weight:bold;
+}
+
+.item_popup_arms_bg {
+	background-image:url(../images/inventory/body_arms.png);
+	background-repeat:no-repeat;
+	width:93px;
+	height:138px;
+}
+
+.item_popup_head {
+	background-image:url(../images/inventory/foot_head_animal.png);
+	background-repeat:no-repeat;
+	width:93px;
+	height:93px;
+}
+
+.item_popup_yield {
+	background-image:url(../images/inventory/bag.png);
+	background-repeat:no-repeat;
+	width:73px;
+	height:73px;
+}
+
+/* bars are used to display values between 0 and 100% */
+.bar {
+	position:relative;
+	background-image:url(../images/job/bar.png);
+	width:152px;
+	height:18px;
+}
+
+.bar_fill,.bar_full,.bar_brown {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	height: 16px;
+	background-repeat: repeat-x;
+	z-index: 1;
+}
+
+.bar_fill {
+	background-image: url(../images/job/bar_fill.png);
+}
+
+.bar_brown {
+	background-image: url(../images/job/bar_brown.png);
+}
+
+.bar_full {
+	background-image: url(../images/job/bar_full.png);
+}
+
+.bar_perc {
+	position:absolute;
+	top:1px;
+	left:1px;
+	height:15px;
+	padding-top:1px;
+	width:152px;
+	text-align:center;
+	font-size:13px;
+	font-weight:normal;
+	z-index:2;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.grey {
+	color: #999;
+}

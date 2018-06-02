@@ -1,0 +1,720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0038)https://classic.the-west.net/game.php# -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>00:25:39 - Classic - The West</title>
+	
+	<link href="./00_25_40 - Classic - The West_files/game.css" rel="stylesheet" type="text/css">
+	<script src="./00_25_40 - Classic - The West_files/mootools-release-1.11.js.download" type="text/javascript"></script>
+	<script src="./00_25_40 - Classic - The West_files/merged.js.download" type="text/javascript"></script>
+</head>
+<body>
+<div id="left_top">
+<div id="popup_div" class="mousepopup" style="position: absolute; visibility: hidden; top: 779px; left: 468px; zoom: 1; opacity: 0.9; z-index: 587;"><b>Aim:</b> 0</div>
+</div><script type="text/javascript">
+//<![CDATA[
+var server_time = new Date(1527798821*1000);
+var server_time_difference = new Date().getTime() - server_time.getTime();
+var h = '782ebf';
+var pos = {
+	x: 23,
+	y: 558
+};
+
+window.addEvent('domready', function()
+{
+
+	Character.healthDate = new Date(1527798233*1000);
+	Character.energyDate = new Date(1527798001*1000);
+	
+	Character.attributes = {"strength":29,"flexibility":0,"dexterity":0,"charisma":0};
+	Character.attribute_points = 0;
+	Character.skill_points = 0;
+	Character.skills = {"build":115,"tough":29,"endurance":29,"health":29,"punch":30,"ride":0,"reflex":0,"dodge":0,"hide":0,"swim":0,"aim":0,"shot":0,"pitfall":0,"finger_dexterity":0,"repair":0,"leadership":0,"tactic":0,"trade":0,"animal":0,"appearance":0};
+	Character.bonus = {"attributes":[],"skills":{"dodge":7,"build":28,"pitfall":4,"appearance":4,"swim":4,"trade":11,"reflex":5},"skills_total":{"pitfall":4,"tough":0,"health":0,"swim":4,"reflex":5,"punch":0,"build":28,"dodge":7,"trade":11,"aim":0,"leadership":0,"repair":0,"appearance":4,"ride":0}};
+	
+	Character.set_level(29);
+	Character.set_min_experience(8834);
+	Character.set_max_experience(9744);
+	Character.set_experience(9092);
+	
+	Character.healthRegen = 0.02;
+	Character.energyRegen = 0.03;
+	Character.set_health(670);
+	Character.set_max_energy(150);
+	Character.set_energy(33.025841882527);
+	
+	Character.set_money(0);
+	Character.default_speed = (1);
+	Character.set_speed(0.571);
+	
+	Character.recalc_skill_attr();
+	
+	Character.start_ticker_energy();
+	Character.start_ticker_health();
+	
+JobList[1] = new JobInfo('Tending pigs', 'swine', 1, '1 * skills.tough + 1 * skills.endurance + 1 * skills.leadership + 2 * skills.animal + 0');
+JobList[2] = new JobInfo('Scare birds off the field', 'scarecrow', 0, '1 * skills.build + 1 * skills.shot + 1 * skills.pitfall + 1 * skills.tactic + 1 * skills.animal + 0');
+JobList[3] = new JobInfo('Putting up posters', 'wanted', 0, '1 * skills.endurance + 1 * skills.ride + 1 * skills.hide + 1 * skills.finger_dexterity + 1 * skills.pitfall + 0');
+JobList[4] = new JobInfo('Picking tobacco', 'tabacco', 0, '1 * skills.tough + 2 * skills.finger_dexterity + 1 * skills.tactic + 1 * skills.trade + 0');
+JobList[5] = new JobInfo('Picking cotton', 'cotton', 1, '1 * skills.tough + 1 * skills.endurance + 1 * skills.finger_dexterity + 1 * skills.leadership + 1 * skills.trade + 0');
+JobList[6] = new JobInfo('Picking sugar cane  ', 'sugar', 3, '1 * skills.punch + 1 * skills.tough + 1 * skills.finger_dexterity + 1 * skills.repair + 1 * skills.trade + 0');
+JobList[7] = new JobInfo('Stream fishing', 'angle', 2, '1 * skills.hide + 3 * skills.swim + 1 * skills.repair + 0');
+JobList[8] = new JobInfo('Harvesting fields  ', 'cereal', 6, '1 * skills.punch + 1 * skills.tough + 1 * skills.endurance + 1 * skills.ride + 1 * skills.finger_dexterity + 0');
+JobList[9] = new JobInfo('Picking berries', 'berry', 10, '2 * skills.tough + 1 * skills.hide + 2 * skills.finger_dexterity + 0');
+JobList[10] = new JobInfo('Tending sheep', 'sheeps', 8, '1 * skills.tough + 1 * skills.endurance + 1 * skills.leadership + 2 * skills.animal + 0');
+JobList[11] = new JobInfo('Selling newspaper *The Western Star*', 'newspaper', 12, '2 * skills.ride + 2 * skills.trade + 1 * skills.appearance + 0');
+JobList[14] = new JobInfo('Picking corn', 'corn', 19, '1 * skills.finger_dexterity + 1 * skills.tactic + 1 * skills.trade + 1 * skills.animal + 1 * skills.appearance + 0');
+JobList[15] = new JobInfo('Picking beans', 'beans', 18, '1 * skills.endurance + 1 * skills.finger_dexterity + 1 * skills.leadership + 1 * skills.tactic + 1 * skills.animal + 0');
+JobList[16] = new JobInfo('Guard fort', 'fort_guard', 19, '1 * skills.reflex + 1 * skills.shot + 1 * skills.leadership + 2 * skills.appearance + 0');
+JobList[17] = new JobInfo('Tanning deer skin', 'tanning', 21, '1 * skills.tough + 1 * skills.endurance + 1 * skills.swim + 1 * skills.finger_dexterity + 1 * skills.trade + 0');
+JobList[18] = new JobInfo('Prospecting', 'digging', 25, '1 * skills.tough + 1 * skills.reflex + 1 * skills.swim + 2 * skills.trade + 0');
+JobList[19] = new JobInfo('Digging graves', 'grave', 31, '1 * skills.build + 1 * skills.punch + 1 * skills.tough + 1 * skills.endurance + 1 * skills.ride + 0');
+JobList[20] = new JobInfo('Hunting turkey', 'turkey', 30, '1 * skills.reflex + 2 * skills.hide + 1 * skills.shot + 1 * skills.pitfall + 0');
+JobList[21] = new JobInfo('Laying railroad tracks', 'rail', 40, '2 * skills.build + 1 * skills.endurance + 1 * skills.repair + 1 * skills.leadership + 0');
+JobList[22] = new JobInfo('Cowboy', 'cow', 34, '2 * skills.ride + 1 * skills.reflex + 1 * skills.tactic + 1 * skills.animal + 0');
+JobList[23] = new JobInfo('Repair fences', 'fence', 30, '1 * skills.finger_dexterity + 2 * skills.repair + 2 * skills.animal + 0');
+JobList[25] = new JobInfo('Stone mining', 'stone', 38, '3 * skills.punch + 1 * skills.endurance + 1 * skills.reflex + 0');
+JobList[27] = new JobInfo('Cutting trees', 'wood', 36, '2 * skills.punch + 1 * skills.endurance + 1 * skills.reflex + 1 * skills.appearance + 0');
+JobList[29] = new JobInfo('Branding cattle', 'brand', 53, '1 * skills.ride + 1 * skills.reflex + 1 * skills.pitfall + 2 * skills.animal + 0');
+JobList[30] = new JobInfo('Installing a barbed wire fence', 'wire', 47, '1 * skills.build + 2 * skills.finger_dexterity + 1 * skills.pitfall + 1 * skills.animal + 0');
+JobList[32] = new JobInfo('Gemstone search', 'gems', 57, '2 * skills.swim + 1 * skills.finger_dexterity + 2 * skills.trade + 0');
+JobList[33] = new JobInfo('Carving out claims', 'claim', 56, '1 * skills.build + 1 * skills.endurance + 1 * skills.swim + 1 * skills.trade + 1 * skills.appearance + 0');
+JobList[34] = new JobInfo('Repairing a covered wagon', 'chuck_wagon', 68, '1 * skills.ride + 2 * skills.repair + 1 * skills.leadership + 1 * skills.trade + 0');
+JobList[35] = new JobInfo('Breaking in horses', 'break_in', 70, '2 * skills.ride + 1 * skills.reflex + 1 * skills.pitfall + 1 * skills.animal + 0');
+JobList[36] = new JobInfo('Trading', 'trade', 62, '1 * skills.pitfall + 2 * skills.trade + 2 * skills.appearance + 0');
+JobList[37] = new JobInfo('Setting up telegraph poles', 'mast', 83, '2 * skills.build + 1 * skills.punch + 1 * skills.swim + 1 * skills.repair + 0');
+JobList[39] = new JobInfo('Beaver hunt', 'beaver', 82, '2 * skills.hide + 3 * skills.pitfall + 0');
+JobList[40] = new JobInfo('Coal mining', 'coal', 75, '2 * skills.punch + 1 * skills.reflex + 1 * skills.finger_dexterity + 1 * skills.trade + 0');
+JobList[42] = new JobInfo('River fishing', 'fishing', 95, '2 * skills.swim + 2 * skills.pitfall + 1 * skills.leadership + 0');
+JobList[43] = new JobInfo('Building railroad station', 'trainstation', 110, '2 * skills.build + 1 * skills.finger_dexterity + 1 * skills.repair + 1 * skills.leadership + 0');
+JobList[44] = new JobInfo('Building windmills', 'windmeel', 100, '1 * skills.build + 1 * skills.endurance + 1 * skills.ride + 1 * skills.leadership + 1 * skills.tactic + 0');
+JobList[45] = new JobInfo('Exploration', 'explore', 108, '1 * skills.endurance + 1 * skills.shot + 1 * skills.ride + 1 * skills.swim + 1 * skills.leadership + 0');
+JobList[46] = new JobInfo('Rafting wood', 'float', 110, '1 * skills.reflex + 3 * skills.swim + 1 * skills.tactic + 0');
+JobList[47] = new JobInfo('Building a bridge', 'bridge', 116, '1 * skills.build + 1 * skills.endurance + 2 * skills.swim + 1 * skills.repair + 0');
+JobList[48] = new JobInfo('Catching horses', 'springe', 138, '1 * skills.endurance + 2 * skills.ride + 2 * skills.animal + 0');
+JobList[49] = new JobInfo('Building coffins', 'coffin', 133, '1 * skills.build + 1 * skills.reflex + 2 * skills.repair + 1 * skills.appearance + 0');
+JobList[50] = new JobInfo('Transport ammunition', 'dynamite', 136, '1 * skills.ride + 1 * skills.reflex + 1 * skills.shot + 1 * skills.finger_dexterity + 1 * skills.appearance + 0');
+JobList[51] = new JobInfo('Hunt coyotes', 'coyote', 141, '2 * skills.endurance + 1 * skills.shot + 1 * skills.pitfall + 1 * skills.hide + 0');
+JobList[52] = new JobInfo('Hunting buffalo', 'buffalo', 143, '1 * skills.ride + 1 * skills.pitfall + 1 * skills.leadership + 1 * skills.tactic + 1 * skills.animal + 0');
+JobList[54] = new JobInfo('Trading with indians', 'indians', 176, '1 * skills.pitfall + 2 * skills.trade + 2 * skills.appearance + 0');
+JobList[55] = new JobInfo('Clearing the forest', 'clearing', 166, '2 * skills.punch + 1 * skills.reflex + 1 * skills.leadership + 1 * skills.tactic + 0');
+JobList[56] = new JobInfo('Silver mining', 'silver', 179, '1 * skills.punch + 1 * skills.tough + 1 * skills.finger_dexterity + 2 * skills.trade + 0');
+JobList[57] = new JobInfo('Guarding the stage coach', 'diligence_guard', 186, '1 * skills.ride + 1 * skills.shot + 1 * skills.repair + 2 * skills.leadership + 0');
+JobList[58] = new JobInfo('Hunting wolves', 'wolf', 208, '2 * skills.hide + 2 * skills.pitfall + 1 * skills.animal + 0');
+JobList[59] = new JobInfo('Protecting the track of settlers', 'track', 234, '2 * skills.hide + 2 * skills.leadership + 1 * skills.tactic + 0');
+JobList[60] = new JobInfo('Stealing Horses', 'ox', 220, '1 * skills.reflex + 1 * skills.hide + 2 * skills.pitfall + 1 * skills.animal + 0');
+JobList[61] = new JobInfo('Prison guard', 'guard', 206, '1 * skills.punch + 1 * skills.reflex + 1 * skills.shot + 2 * skills.appearance + 0');
+JobList[62] = new JobInfo('Evangelizing', 'bible', 232, '1 * skills.tough + 1 * skills.ride + 1 * skills.trade + 2 * skills.appearance + 0');
+JobList[63] = new JobInfo('Pony express', 'ponyexpress', 230, '1 * skills.endurance + 2 * skills.ride + 1 * skills.shot + 1 * skills.animal + 0');
+JobList[64] = new JobInfo('Selling guns to indians', 'weapons', 250, '1 * skills.hide + 1 * skills.shot + 1 * skills.repair + 2 * skills.trade + 0');
+JobList[65] = new JobInfo('Grave robber', 'dead', 240, '1 * skills.tough + 1 * skills.hide + 2 * skills.finger_dexterity + 1 * skills.repair + 0');
+JobList[66] = new JobInfo('Hunting grizzly bear', 'grizzly', 250, '1 * skills.hide + 1 * skills.shot + 2 * skills.pitfall + 1 * skills.animal + 0');
+JobList[67] = new JobInfo('Drilling for oil', 'oil', 252, '1 * skills.build + 1 * skills.tough + 1 * skills.endurance + 1 * skills.leadership + 1 * skills.trade + 0');
+JobList[68] = new JobInfo('Treasure hunt', 'treasure_hunting', 285, '2 * skills.hide + 2 * skills.repair + 1 * skills.tactic + 0');
+JobList[69] = new JobInfo('Serving in the army', 'army', 266, '1 * skills.endurance + 1 * skills.swim + 1 * skills.shot + 1 * skills.pitfall + 1 * skills.appearance + 0');
+JobList[70] = new JobInfo('Robbing settlers', 'steal', 256, '1 * skills.reflex + 1 * skills.hide + 1 * skills.shot + 1 * skills.pitfall + 1 * skills.finger_dexterity + 0');
+JobList[71] = new JobInfo('Mercenary work', 'mercenary', 291, '1 * skills.tough + 1 * skills.swim + 1 * skills.shot + 1 * skills.repair + 1 * skills.appearance + 0');
+JobList[72] = new JobInfo('Chasing bandits', 'bandits', 303, '1 * skills.tough + 1 * skills.endurance + 1 * skills.hide + 1 * skills.leadership + 1 * skills.tactic + 0');
+JobList[73] = new JobInfo('Ambush', 'aggression', 346, '2 * skills.hide + 1 * skills.pitfall + 1 * skills.tactic + 1 * skills.appearance + 0');
+JobList[74] = new JobInfo('Ambush stagecoach', 'diligence_aggression', 446, '1 * skills.shot + 1 * skills.pitfall + 1 * skills.leadership + 1 * skills.tactic + 1 * skills.appearance + 0');
+JobList[75] = new JobInfo('Bounty hunter', 'bounty', 380, '1 * skills.punch + 1 * skills.endurance + 1 * skills.shot + 1 * skills.pitfall + 1 * skills.appearance + 0');
+JobList[76] = new JobInfo('Transporting prisoners', 'captured', 388, '1 * skills.endurance + 1 * skills.reflex + 1 * skills.hide + 2 * skills.tactic + 0');
+JobList[77] = new JobInfo('Robbing trains', 'train', 425, '1 * skills.endurance + 1 * skills.hide + 1 * skills.shot + 1 * skills.pitfall + 1 * skills.trade + 0');
+JobList[78] = new JobInfo('Burglary', 'burglary', 463, '1 * skills.endurance + 2 * skills.hide + 1 * skills.tactic + 1 * skills.trade + 0');
+	
+	PremiumBoni.endTimes = {"regenEnd":1615226865.4071,"automationEnd":1611598065.4071,"moneyEnd":1614017265.4071,"duelEnd":1613412465.4071};
+	
+	Tasks.last_pos = pos;
+	
+	Character.set_home_town(27, 551, 10);	
+	WMap.initialize(10, 10);
+	WMinimap.initialize();
+	
+	ticker_seconds.periodical(1000);
+	
+	
+	WEvent.register('level', Character.redraw_level_box.store(Character));
+	WEvent.register('character_values_changed', Character.recalc_skill_attr.store(Character));
+	WEvent.register('character_values_changed', Character.redraw_health.store(Character));
+	
+	// update all tiles if character values changed to display new available jobs
+	WEvent.register('character_values_changed', WMap.mapData.update_all_jobs.store(WMap.mapData));
+	WEvent.register('character_avatar_changed', Character.set_avatar.store(Character));
+	
+	Tasks.replace_all([{"queue_id":692751,"date_start":1527798232.5692,"date_done":1527800032.5692,"type":"job","data":{"job_id":47,"job_points_formula":"1 * skills.build + 1 * skills.endurance + 2 * skills.swim + 1 * skills.repair + 116 * -1","date_done":1527800032.5692,"date_start":1527798232.5692,"queue_id":692751,"type":"job","player_id":3419,"job_points":64,"task_image":"images\/jobs\/bridge.png","title":"Building a bridge"}},{"queue_id":692752,"date_start":1527800032.5692,"date_done":1527801832.5692,"type":"job","data":{"job_id":47,"job_points_formula":"1 * skills.build + 1 * skills.endurance + 2 * skills.swim + 1 * skills.repair + 116 * -1","date_done":1527801832.5692,"date_start":1527800032.5692,"queue_id":692752,"type":"job","player_id":3419,"job_points":64,"task_image":"images\/jobs\/bridge.png","title":"Building a bridge"}},{"queue_id":692753,"date_start":1527801832.5692,"date_done":1527803632.5692,"type":"job","data":{"job_id":47,"job_points_formula":"1 * skills.build + 1 * skills.endurance + 2 * skills.swim + 1 * skills.repair + 116 * -1","date_done":1527803632.5692,"date_start":1527801832.5692,"queue_id":692753,"type":"job","player_id":3419,"job_points":64,"task_image":"images\/jobs\/bridge.png","title":"Building a bridge"}},{"queue_id":692755,"date_start":1527803632.5692,"date_done":1527805432.5692,"type":"job","data":{"job_id":47,"job_points_formula":"1 * skills.build + 1 * skills.endurance + 2 * skills.swim + 1 * skills.repair + 116 * -1","date_done":1527805432.5692,"date_start":1527803632.5692,"queue_id":692755,"type":"job","player_id":3419,"job_points":64,"task_image":"images\/jobs\/bridge.png","title":"Building a bridge"}}]);
+	
+	$('cash').addMousePopup(new MousePopup('<b>Cash<\/b>. Your Cash is not safe. You can lose it in a duel or when you die during work.', 250, {opacity: 0.9, width: '250px'}));
+	$('deposit').addMousePopup(new MousePopup('<b>Bank account<\/b>. The money in your bank account is safe. It is automatically withdrawn when you don\'t have enough cash to make a purchase.', 250, {opacity: 0.9, width: '250px'}));
+
+	$('footer_scroll_map_to_char').addMousePopup(new MousePopup('Center map on your character'));
+	$('footer_scroll_map_to_home_town').addMousePopup(new MousePopup('Center map on your town'));
+	$('footer_minimap_icon').addMousePopup(new MousePopup('Mini map'));
+	$('footer_forum').addMousePopup(new MousePopup('The West Forum'));
+	$('footer_help').addMousePopup(new MousePopup('Help'));
+	$('footer_logout').addMousePopup(new MousePopup('Log out'));
+
+	$('curtain_bg').setOpacity(0.4);
+	$('curtain_box').centerLeft();
+	
+	
+});
+//]]>
+
+</script>
+<div id="curtain">
+	<div id="curtain_box" style="left: 960px;">
+		<h2>The world is not available at the moment:</h2><br>
+		<span><a href="https://classic.the-west.net/">The server is not available!</a></span>
+	</div>
+	<div id="curtain_bg" style="visibility: visible; zoom: 1; opacity: 0.4;"></div>
+</div>
+<h1>The West</h1>
+	<div id="border_cap"></div>
+	<div id="head_container">
+		<div id="menus">
+			<ul id="left_menu">
+				<li id="menu_character" style="-moz-user-select:none;" unselectable="yes"><a href="javascript:AjaxWindow.show(&#39;character&#39;);"><span>Character</span></a></li>
+				<li id="menu_skill" style="-moz-user-select:none;" unselectable="yes"><a href="javascript:AjaxWindow.show(&#39;skill&#39;);"><span>Skills</span></a></li>
+				<li id="menu_inventory"><a href="javascript:AjaxWindow.show(&#39;inventory&#39;);"><span>Inventory</span></a></li>
+				<li id="menu_saloon"><a href="javascript:AjaxWindow.show(&#39;building_saloon&#39;);"><span>Quests</span></a></li>
+				<li id="menu_town"><a href="javascript:AjaxWindow.show(&#39;town&#39;,null,Character.get_home_town()?Character.get_home_town().x+&#39;_&#39;+Character.get_home_town().y:null);"><span>Town</span></a></li>
+				<li id="menu_townforum"><a href="javascript:AjaxWindow.show(&#39;forum&#39;);"><span>Town forum</span></a></li>
+				<li id="menu_duel"><a href="javascript:AjaxWindow.show(&#39;duel&#39;);"><span>Duel</span></a></li>
+			</ul>
+			<ul id="right_menu">
+				<li id="menu_ranking"><a href="javascript:AjaxWindow.show(&#39;ranking&#39;);"><span>Ranking</span></a></li>
+				<li id="menu_premium"><a href="javascript:AjaxWindow.show(&#39;premium&#39;);"><span>Premium</span></a></li>
+				<li id="menu_messages" style="-moz-user-select:none;" unselectable="yes"><a href="javascript:AjaxWindow.show(&#39;messages&#39;);"><span>Telegrams</span></a></li>
+				<li id="menu_reports" style="-moz-user-select:none;" unselectable="yes"><a href="javascript:AjaxWindow.show(&#39;reports&#39;);"><span style="display: none; background: url(&quot;img.php?type=menu&quot;) 128px -125px;"></span></a></li>
+				<li id="menu_work"><a href="javascript:AjaxWindow.show(&#39;work&#39;);"><span>Activity</span></a></li>
+				<li id="menu_settings"><a href="javascript:AjaxWindow.show(&#39;settings&#39;);"><span>Settings</span></a></li>
+			<li id="job_queue"><div><span class="task"><div class="taskTime"><p class="timer">00:25:39</p></div><div class="taskBtns"><div class="taskAbort"></div></div><div title="" class="icon" style="background: url(&quot;https://westen.innogamescdn.com/images/jobs/bridge.png&quot;);"><div class="centermap" x="23" y="558"></div></div></span></div></li></ul>
+		</div>
+		<div id="head_background">
+			<div id="character_info">
+				<div id="avatar"><img src="./00_25_40 - Classic - The West_files/pilgrim_small.png" alt=""><br><div id="level_box">29</div>bart</div>
+				<div id="health_bar"><div id="health_filler" style="width: 84px;"></div><div id="health_text" class="bar_value">670/670</div></div>
+				<div id="energy_bar" style="background-image: url(&quot;../images/character_bars/bars_bonus.png&quot;);"><div id="energy_filler" style="width: 25.76px; background-image: url(&quot;images/character_bars/filler_bonus.png&quot;);"></div><div id="energy_text" class="bar_value">46/150</div></div>
+				<div id="experience_bar"><div id="experience_filler" style="width: 25.2px;"></div><div id="experience_text" class="bar_value">273/910</div></div>
+				
+				<div id="current_task" style="background-image: url(&quot;images/tasks/job.png&quot;);">Activity: Building a bridge.</div>
+				<div id="task_time" style="display: block;">00:25:39</div>
+				<div id="cash">10</div>
+				<div id="deposit">376</div>
+			</div>
+		</div>
+	</div>
+	<div id="main_container">
+		<div id="map_arrows">
+			<a onmousedown="WMap.startArrowScroll(&#39;w&#39;);" onmouseup="WMap.stopArrowScroll()" onmouseout="WMap.stopArrowScroll()" href="https://classic.the-west.net/game.php#" id="map_scroll_left"></a>
+			<a onmousedown="WMap.startArrowScroll(&#39;e&#39;);" onmouseup="WMap.stopArrowScroll()" onmouseout="WMap.stopArrowScroll()" href="https://classic.the-west.net/game.php#" id="map_scroll_right"></a>
+			<a onmousedown="WMap.startArrowScroll(&#39;n&#39;);" onmouseup="WMap.stopArrowScroll()" onmouseout="WMap.stopArrowScroll()" href="https://classic.the-west.net/game.php#" id="map_scroll_top"></a>
+			<a onmousedown="WMap.startArrowScroll(&#39;s&#39;);" onmouseup="WMap.stopArrowScroll()" onmouseout="WMap.stopArrowScroll()" href="https://classic.the-west.net/game.php#" id="map_scroll_bottom"></a>
+		</div>
+		<div id="abdorments" style="z-index:1">
+			<div id="abdorment_left"></div>
+			<div id="abdorment_right"></div>
+			<div id="abdorment_middle"></div>
+		</div>
+		<div id="map_place">
+			<div id="map_wrapper">
+				<div id="map">
+					<div id="fade_div" style="visibility: hidden; zoom: 1; opacity: 0;"></div>
+					<div style="position: absolute; top: -22950px; left: 1156px; z-index: 1;" id="map_move_container"><div class="tile" id="tile_3_849" style="position: absolute; left: -270px; top: 22896px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_4_849" style="position: absolute; left: -378px; top: 22896px; background-image: url(&quot;images/tiles/lake3.png&quot;); background-position: -106px 0px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/angle.png&quot;);" class="tile"></div></div><div class="tile" id="tile_5_849" style="position: absolute; left: -486px; top: 22896px; background-image: url(&quot;images/tiles/lake3.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_6_849" style="position: absolute; left: -594px; top: 22896px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_7_849" style="position: absolute; left: -702px; top: 22896px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_8_849" style="position: absolute; left: -810px; top: 22896px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_9_849" style="position: absolute; left: -918px; top: 22896px; background-image: url(&quot;images/tiles/lake5.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_10_849" style="position: absolute; left: -1026px; top: 22896px; background-image: url(&quot;images/tiles/lake5.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_11_849" style="position: absolute; left: -1134px; top: 22896px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_12_849" style="position: absolute; left: -1242px; top: 22896px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_3_850" style="position: absolute; left: -324px; top: 22923px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_4_850" style="position: absolute; left: -432px; top: 22923px; background-image: url(&quot;images/tiles/river5.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_5_850" style="position: absolute; left: -540px; top: 22923px; background-image: url(&quot;images/tiles/lake3.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_6_850" style="position: absolute; left: -648px; top: 22923px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_7_850" style="position: absolute; left: -756px; top: 22923px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_8_850" style="position: absolute; left: -864px; top: 22923px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_9_850" style="position: absolute; left: -972px; top: 22923px; background-image: url(&quot;images/tiles/lake5.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_10_850" style="position: absolute; left: -1080px; top: 22923px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_11_850" style="position: absolute; left: -1188px; top: 22923px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_12_850" style="position: absolute; left: -1296px; top: 22923px; background-image: url(&quot;images/tiles/mountain4.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_3_851" style="position: absolute; left: -270px; top: 22950px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_4_851" style="position: absolute; left: -378px; top: 22950px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_5_851" style="position: absolute; left: -486px; top: 22950px; background-image: url(&quot;images/tiles/lake3.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_6_851" style="position: absolute; left: -594px; top: 22950px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/wire.png&quot;);" class="tile"></div><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/map/people_more.png&quot;);" class="tile"></div></div><div class="tile" id="tile_7_851" style="position: absolute; left: -702px; top: 22950px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_8_851" style="position: absolute; left: -810px; top: 22950px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_9_851" style="position: absolute; left: -918px; top: 22950px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_10_851" style="position: absolute; left: -1026px; top: 22950px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_11_851" style="position: absolute; left: -1134px; top: 22950px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: -212px -54px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/fishing.png&quot;); opacity: 0.4;" class="tile"></div></div><div class="tile" id="tile_12_851" style="position: absolute; left: -1242px; top: 22950px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_3_852" style="position: absolute; left: -324px; top: 22977px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_4_852" style="position: absolute; left: -432px; top: 22977px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_5_852" style="position: absolute; left: -540px; top: 22977px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/buffalo.png&quot;); opacity: 0.4;" class="tile"></div></div><div class="tile" id="tile_6_852" style="position: absolute; left: -648px; top: 22977px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_7_852" style="position: absolute; left: -756px; top: 22977px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_8_852" style="position: absolute; left: -864px; top: 22977px; background-image: url(&quot;images/tiles/desert2.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_9_852" style="position: absolute; left: -972px; top: 22977px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_10_852" style="position: absolute; left: -1080px; top: 22977px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_11_852" style="position: absolute; left: -1188px; top: 22977px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_12_852" style="position: absolute; left: -1296px; top: 22977px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_3_853" style="position: absolute; left: -270px; top: 23004px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_4_853" style="position: absolute; left: -378px; top: 23004px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_5_853" style="position: absolute; left: -486px; top: 23004px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_6_853" style="position: absolute; left: -594px; top: 23004px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_7_853" style="position: absolute; left: -702px; top: 23004px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_8_853" style="position: absolute; left: -810px; top: 23004px; background-image: url(&quot;images/tiles/desert2.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_9_853" style="position: absolute; left: -918px; top: 23004px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_10_853" style="position: absolute; left: -1026px; top: 23004px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_11_853" style="position: absolute; left: -1134px; top: 23004px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_12_853" style="position: absolute; left: -1242px; top: 23004px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_3_854" style="position: absolute; left: -324px; top: 23031px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_4_854" style="position: absolute; left: -432px; top: 23031px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_5_854" style="position: absolute; left: -540px; top: 23031px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_6_854" style="position: absolute; left: -648px; top: 23031px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_7_854" style="position: absolute; left: -756px; top: 23031px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_8_854" style="position: absolute; left: -864px; top: 23031px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_9_854" style="position: absolute; left: -972px; top: 23031px; background-image: url(&quot;images/tiles/desert2.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_10_854" style="position: absolute; left: -1080px; top: 23031px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_11_854" style="position: absolute; left: -1188px; top: 23031px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_12_854" style="position: absolute; left: -1296px; top: 23031px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_3_855" style="position: absolute; left: -270px; top: 23058px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_4_855" style="position: absolute; left: -378px; top: 23058px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_5_855" style="position: absolute; left: -486px; top: 23058px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/sheeps.png&quot;);" class="tile"></div><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/map/people_more.png&quot;);" class="tile"></div></div><div class="tile" id="tile_6_855" style="position: absolute; left: -594px; top: 23058px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_7_855" style="position: absolute; left: -702px; top: 23058px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_8_855" style="position: absolute; left: -810px; top: 23058px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_9_855" style="position: absolute; left: -918px; top: 23058px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_10_855" style="position: absolute; left: -1026px; top: 23058px; background-image: url(&quot;images/tiles/desert2.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_11_855" style="position: absolute; left: -1134px; top: 23058px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_12_855" style="position: absolute; left: -1242px; top: 23058px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_3_856" style="position: absolute; left: -324px; top: 23085px; background-image: url(&quot;images/tiles/river3.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_4_856" style="position: absolute; left: -432px; top: 23085px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/scarecrow.png&quot;);" class="tile"></div><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/map/people_more.png&quot;);" class="tile"></div></div><div class="tile" id="tile_5_856" style="position: absolute; left: -540px; top: 23085px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_6_856" style="position: absolute; left: -648px; top: 23085px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_7_856" style="position: absolute; left: -756px; top: 23085px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_8_856" style="position: absolute; left: -864px; top: 23085px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_9_856" style="position: absolute; left: -972px; top: 23085px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_10_856" style="position: absolute; left: -1080px; top: 23085px; background-image: url(&quot;images/tiles/desert1.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_11_856" style="position: absolute; left: -1188px; top: 23085px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_12_856" style="position: absolute; left: -1296px; top: 23085px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_3_857" style="position: absolute; left: -270px; top: 23112px; background-image: url(&quot;images/tiles/river3.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_4_857" style="position: absolute; left: -378px; top: 23112px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_5_857" style="position: absolute; left: -486px; top: 23112px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_6_857" style="position: absolute; left: -594px; top: 23112px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_7_857" style="position: absolute; left: -702px; top: 23112px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_8_857" style="position: absolute; left: -810px; top: 23112px; background-image: url(&quot;images/tiles/town4.png&quot;); background-position: 0px 0px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/map/people_more.png&quot;);" class="tile"></div></div><div class="tile" id="tile_9_857" style="position: absolute; left: -918px; top: 23112px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_10_857" style="position: absolute; left: -1026px; top: 23112px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_11_857" style="position: absolute; left: -1134px; top: 23112px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_12_857" style="position: absolute; left: -1242px; top: 23112px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_3_858" style="position: absolute; left: -324px; top: 23139px; background-image: url(&quot;images/tiles/river3.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_4_858" style="position: absolute; left: -432px; top: 23139px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_5_858" style="position: absolute; left: -540px; top: 23139px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_6_858" style="position: absolute; left: -648px; top: 23139px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_7_858" style="position: absolute; left: -756px; top: 23139px; background-image: url(&quot;images/tiles/town4.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_8_858" style="position: absolute; left: -864px; top: 23139px; background-image: url(&quot;images/tiles/town4.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_9_858" style="position: absolute; left: -972px; top: 23139px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_10_858" style="position: absolute; left: -1080px; top: 23139px; background-image: url(&quot;images/tiles/desert0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_11_858" style="position: absolute; left: -1188px; top: 23139px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_12_858" style="position: absolute; left: -1296px; top: 23139px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_3_859" style="position: absolute; left: -270px; top: 23166px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/steal.png&quot;); opacity: 0.4;" class="tile"></div></div><div class="tile" id="tile_4_859" style="position: absolute; left: -378px; top: 23166px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_5_859" style="position: absolute; left: -486px; top: 23166px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_6_859" style="position: absolute; left: -594px; top: 23166px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_7_859" style="position: absolute; left: -702px; top: 23166px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_8_859" style="position: absolute; left: -810px; top: 23166px; background-image: url(&quot;images/tiles/town4.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_9_859" style="position: absolute; left: -918px; top: 23166px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/indians.png&quot;); opacity: 0.4;" class="tile"></div></div><div class="tile" id="tile_10_859" style="position: absolute; left: -1026px; top: 23166px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_11_859" style="position: absolute; left: -1134px; top: 23166px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_12_859" style="position: absolute; left: -1242px; top: 23166px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_3_860" style="position: absolute; left: -324px; top: 23193px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_4_860" style="position: absolute; left: -432px; top: 23193px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_5_860" style="position: absolute; left: -540px; top: 23193px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_6_860" style="position: absolute; left: -648px; top: 23193px; background-image: url(&quot;images/tiles/river3.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_7_860" style="position: absolute; left: -756px; top: 23193px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_8_860" style="position: absolute; left: -864px; top: 23193px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_9_860" style="position: absolute; left: -972px; top: 23193px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_10_860" style="position: absolute; left: -1080px; top: 23193px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_11_860" style="position: absolute; left: -1188px; top: 23193px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_12_860" style="position: absolute; left: -1296px; top: 23193px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_3_861" style="position: absolute; left: -270px; top: 23220px; background-image: url(&quot;images/tiles/town2.png&quot;); background-position: 0px 0px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/map/people_more.png&quot;);" class="tile"></div></div><div class="tile" id="tile_4_861" style="position: absolute; left: -378px; top: 23220px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_5_861" style="position: absolute; left: -486px; top: 23220px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_6_861" style="position: absolute; left: -594px; top: 23220px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_7_861" style="position: absolute; left: -702px; top: 23220px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_8_861" style="position: absolute; left: -810px; top: 23220px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_9_861" style="position: absolute; left: -918px; top: 23220px; background-image: url(&quot;images/tiles/river0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_10_861" style="position: absolute; left: -1026px; top: 23220px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_11_861" style="position: absolute; left: -1134px; top: 23220px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/guard.png&quot;); opacity: 0.4;" class="tile"></div></div><div class="tile" id="tile_12_861" style="position: absolute; left: -1242px; top: 23220px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_3_862" style="position: absolute; left: -324px; top: 23247px; background-image: url(&quot;images/tiles/town2.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_4_862" style="position: absolute; left: -432px; top: 23247px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_5_862" style="position: absolute; left: -540px; top: 23247px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_6_862" style="position: absolute; left: -648px; top: 23247px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_7_862" style="position: absolute; left: -756px; top: 23247px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_8_862" style="position: absolute; left: -864px; top: 23247px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_9_862" style="position: absolute; left: -972px; top: 23247px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_10_862" style="position: absolute; left: -1080px; top: 23247px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_11_862" style="position: absolute; left: -1188px; top: 23247px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px -54px;"></div><div class="tile" id="tile_12_862" style="position: absolute; left: -1296px; top: 23247px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_3_863" style="position: absolute; left: -270px; top: 23274px; background-image: url(&quot;images/tiles/town2.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_4_863" style="position: absolute; left: -378px; top: 23274px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_5_863" style="position: absolute; left: -486px; top: 23274px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_6_863" style="position: absolute; left: -594px; top: 23274px; background-image: url(&quot;images/tiles/river2.png&quot;); background-position: -106px -54px;"></div><div class="tile" id="tile_7_863" style="position: absolute; left: -702px; top: 23274px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_8_863" style="position: absolute; left: -810px; top: 23274px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_9_863" style="position: absolute; left: -918px; top: 23274px; background-image: url(&quot;images/tiles/lake5.png&quot;); background-position: 0px 0px;"></div><div class="tile" id="tile_10_863" style="position: absolute; left: -1026px; top: 23274px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px -54px;"></div><div class="tile" id="tile_11_863" style="position: absolute; left: -1134px; top: 23274px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_12_863" style="position: absolute; left: -1242px; top: 23274px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_3_864" style="position: absolute; left: -324px; top: 23301px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_4_864" style="position: absolute; left: -432px; top: 23301px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px 0px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/bible.png&quot;); opacity: 0.4;" class="tile"></div></div><div class="tile" id="tile_5_864" style="position: absolute; left: -540px; top: 23301px; background-image: url(&quot;images/tiles/river1.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_6_864" style="position: absolute; left: -648px; top: 23301px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_7_864" style="position: absolute; left: -756px; top: 23301px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"></div><div class="tile" id="tile_8_864" style="position: absolute; left: -864px; top: 23301px; background-image: url(&quot;images/tiles/lake5.png&quot;); background-position: -106px 0px;"></div><div class="tile" id="tile_9_864" style="position: absolute; left: -972px; top: 23301px; background-image: url(&quot;images/tiles/lake5.png&quot;); background-position: -212px 0px;"></div><div class="tile" id="tile_10_864" style="position: absolute; left: -1080px; top: 23301px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -106px -54px;"><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/jobs/mini/windmeel.png&quot;);" class="tile"></div><div style="width: 106px; height: 54px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;images/map/people_more.png&quot;);" class="tile"></div></div><div class="tile" id="tile_11_864" style="position: absolute; left: -1188px; top: 23301px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: -318px 0px;"></div><div class="tile" id="tile_12_864" style="position: absolute; left: -1296px; top: 23301px; background-image: url(&quot;images/tiles/grass0.png&quot;); background-position: 0px -54px;"></div></div>
+					<img src="./00_25_40 - Classic - The West_files/transparent.png" alt="" onmousedown="return false;" onmousemove="return false;" id="map_mover" usemap="#map_marker" style="" unselectable="yes">
+					<map name="map_marker" id="map_marker"><area shape="circle" coords="970,296,10"><area shape="circle" coords="808,161,10"><area shape="circle" coords="754,134,10"><area shape="circle" coords="646,26,10"><area shape="circle" coords="430,188,10"><area shape="circle" coords="160,377,10"><area shape="circle" coords="939,243,20" href="https://classic.the-west.net/game.php#"><area shape="polygon" coords="939,270,1045,324,939,378,833,324" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="831,-27,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="777,162,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="777,378,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="669,54,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="723,135,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="615,27,20" href="https://classic.the-west.net/game.php#"><area shape="polygon" coords="399,162,505,216,399,270,293,216" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="291,243,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="129,378,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="75,27,20" href="https://classic.the-west.net/game.php#"><area shape="circle" coords="75,297,20" href="https://classic.the-west.net/game.php#"></map>
+				</div>
+			</div>
+		</div>
+		<div id="footer" style="position:relative;-moz-user-select:none;" unselectable="yes">
+			<div id="footer_menu_left" style="position: absolute; left: 2px; top: 2px; height:100%">
+				<a href="javascript:WMap.scroll_map_to_char();"><img src="./00_25_40 - Classic - The West_files/transparent.png" alt="" id="footer_scroll_map_to_char"></a>
+				<a href="javascript:WMap.scroll_map_to_home_town();"><img src="./00_25_40 - Classic - The West_files/transparent.png" alt="" id="footer_scroll_map_to_home_town"></a>
+				<a href="javascript:WMinimap.toggle()"><img src="./00_25_40 - Classic - The West_files/transparent.png" alt="" id="footer_minimap_icon"></a>
+			</div>
+			<div id="footer_menu_right" style="position: absolute; right: 2px; top: 2px; height:100%">
+				<a href="https://classic.the-west.net/game.php" onclick="wopen(this);" target="_blank"><img src="./00_25_40 - Classic - The West_files/transparent.png" alt="" id="footer_forum"></a>
+				<a href="https://classic.the-west.net/help.php" onclick="wopen(this);"><img src="./00_25_40 - Classic - The West_files/transparent.png" alt="" id="footer_help"></a>
+				<a href="https://classic.the-west.net/game.php?window=logout&amp;action=logout&amp;h=782ebf"><img src="./00_25_40 - Classic - The West_files/transparent.png" alt="" id="footer_logout"></a>
+			</div>
+		<div id="chat"><div id="roomselection"><div class="switchbutton selected global" id="chatswitch_global">Saloon<img src="./00_25_40 - Classic - The West_files/newmessage.gif" class="unread-indicator"><span class="close_chat_button"></span></div><div class="switchbutton town" id="chatswitch_town_10">Wild wild west_ru<img src="./00_25_40 - Classic - The West_files/newmessage.gif" class="unread-indicator"><span class="close_chat_button"></span></div></div><div class="messages active" id="chat_global"><ul class="messagelist"><li><span>[22:15] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: we dit it boiz</span></li><li><span>[22:26] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: yes</span></li><li><span>[22:26] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: what we will do now?<img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:27] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: no idea</span></li><li><span>[22:27] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: should we go to another town or</span></li><li><span>[22:27] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: with gunsmith</span></li><li><span>[22:27] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: i know one town</span></li><li><span>[22:30] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: Congratulations...</span></li><li><span>[22:30] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_frown.png"></span></li><li><span>[22:30] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: gg <img src="./00_25_40 - Classic - The West_files/Smiley_smile.png"></span></li><li><span>[22:31] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: ur mortician sucks</span></li><li><span>[22:33] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: luckily it's in german so i don't understand it </span></li><li><span>[22:33] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:33] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: stalker your statistcis is also not so impresive</span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: diff is 644</span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: but, ye, could be better</span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: 10 exp for duel </span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: yep  lol I'm only 2 place behind stalker, but 100 duel  less <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: just getting fun</span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_tongue.png"></span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: me too <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: ok when fun than please dont judge others</span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: thay plays alsofor fun</span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: booooooooooooooooooom!</span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: bart do you want go with me to build one city?</span></li><li><span>[22:37] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: which one </span></li><li><span>[22:37] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: ours</span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: cr navstevnivi</span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: stalker your is too gut for us<img src="./00_25_40 - Classic - The West_files/Smiley_smile.png"></span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: good</span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: i probably owe them <img src="./00_25_40 - Classic - The West_files/Smiley_tongue.png"></span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: no problem i will write boss in this city i know him</span></li><li><span>[22:39] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: what i mean is I should join Dank Memes (again)</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: we can build there gunsmith</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: for exp</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: i would like go with you</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: or ours if you want <img src="./00_25_40 - Classic - The West_files/Smiley_smirk.png"></span></li><li><span>[22:41] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: how much ist in bank?</span></li><li><span>[22:41] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: lot</span></li><li><span>[22:41] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: 6k</span></li><li><span>[22:42] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: zorro lets go dank memes then should we?</span></li><li><span>[22:42] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: ^^</span></li><li><span>[22:42] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: well i will go probably in cz because they are from czech republic</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: sure</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: i will be here tomorow here</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: i am going fuck one girl<img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: seeja</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: lol</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: bb</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: look @stalker <a href="https://i.imgur.com/VABJ6Bw.png" class="linkified" target="_blank">https://i.imgur.com/VABJ6Bw.png</a></span></li><li><span>[22:44] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: nice one huh?</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: I doubt s1 will have an opportunity to use it</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: yeah its a shame</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: so there's nothing to boast</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: I mean it's useless</span></li><li><span>[22:47] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: High lvl shops are useless</span></li><li><span>[22:47] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:47] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: but they look cool dont they?</span></li><li><span>[22:48] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: yeah</span></li><li><span>[22:48] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: cool but won't be used</span></li><li><span>[22:33] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:33] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: stalker your statistcis is also not so impresive</span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: diff is 644</span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: but, ye, could be better</span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: 10 exp for duel </span></li><li><span>[22:34] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: yep  lol I'm only 2 place behind stalker, but 100 duel  less <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: just getting fun</span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_tongue.png"></span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: me too <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:35] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: ok when fun than please dont judge others</span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: thay plays alsofor fun</span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: booooooooooooooooooom!</span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:36] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: bart do you want go with me to build one city?</span></li><li><span>[22:37] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: which one </span></li><li><span>[22:37] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: ours</span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: cr navstevnivi</span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: stalker your is too gut for us<img src="./00_25_40 - Classic - The West_files/Smiley_smile.png"></span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: good</span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: i probably owe them <img src="./00_25_40 - Classic - The West_files/Smiley_tongue.png"></span></li><li><span>[22:38] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: no problem i will write boss in this city i know him</span></li><li><span>[22:39] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: what i mean is I should join Dank Memes (again)</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: we can build there gunsmith</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: for exp</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: i would like go with you</span></li><li><span>[22:40] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: or ours if you want <img src="./00_25_40 - Classic - The West_files/Smiley_smirk.png"></span></li><li><span>[22:41] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: how much ist in bank?</span></li><li><span>[22:41] </span><a href="https://classic.the-west.net/game.php#">blatar</a><span style="color: rgb(0, 0, 0);">: lot</span></li><li><span>[22:41] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: 6k</span></li><li><span>[22:42] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: zorro lets go dank memes then should we?</span></li><li><span>[22:42] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: ^^</span></li><li><span>[22:42] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: well i will go probably in cz because they are from czech republic</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: sure</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: i will be here tomorow here</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: i am going fuck one girl<img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">Zorro</a><span style="color: rgb(0, 0, 0);">: seeja</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: lol</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: bb</span></li><li><span>[22:43] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: look @stalker <a href="https://i.imgur.com/VABJ6Bw.png" class="linkified" target="_blank">https://i.imgur.com/VABJ6Bw.png</a></span></li><li><span>[22:44] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: nice one huh?</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: I doubt s1 will have an opportunity to use it</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: yeah its a shame</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: so there's nothing to boast</span></li><li><span>[22:46] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: I mean it's useless</span></li><li><span>[22:47] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: High lvl shops are useless</span></li><li><span>[22:47] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: <img src="./00_25_40 - Classic - The West_files/Smiley_laugh.png"></span></li><li><span>[22:47] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: but they look cool dont they?</span></li><li><span>[22:48] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: yeah</span></li><li><span>[22:48] </span><a href="https://classic.the-west.net/game.php#">S.T.A.L.K.E.R.</a><span style="color: rgb(0, 0, 0);">: cool but won't be used</span></li><li><span>[22:55] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: stalke am i welcome then?</span></li><li><span>[22:55] </span><a href="https://classic.the-west.net/game.php#">bart</a><span style="color: rgb(0, 0, 0);">: stalker*</span></li></ul><ul class="playerlist"><li><a href="https://classic.the-west.net/game.php#">Albireo G</a></li><li><a href="https://classic.the-west.net/game.php#">Asaya</a></li><li><a href="https://classic.the-west.net/game.php#">Atoemchen</a></li><li><a href="https://classic.the-west.net/game.php#">blatar</a></li><li><a href="https://classic.the-west.net/game.php#">calatimy jeans</a></li><li><a href="https://classic.the-west.net/game.php#">cvero</a></li><li><a href="https://classic.the-west.net/game.php#">Cymoril</a></li><li><a href="https://classic.the-west.net/game.php#">cynthia ann parker</a></li><li><a href="https://classic.the-west.net/game.php#">dita</a></li><li><a href="https://classic.the-west.net/game.php#">Doc Weber</a></li><li><a href="https://classic.the-west.net/game.php#">eku280</a></li><li><a href="https://classic.the-west.net/game.php#">george erikson</a></li><li><a href="https://classic.the-west.net/game.php#">gruberoid</a></li><li><a href="https://classic.the-west.net/game.php#">Gvardiy</a></li><li><a href="https://classic.the-west.net/game.php#">hart</a></li><li><a href="https://classic.the-west.net/game.php#">HIV-</a></li><li><a href="https://classic.the-west.net/game.php#">ilena</a></li><li><a href="https://classic.the-west.net/game.php#">Jack McCaine</a></li><li><a href="https://classic.the-west.net/game.php#">Jemmy</a></li><li><a href="https://classic.the-west.net/game.php#">Jigelp</a></li><li><a href="https://classic.the-west.net/game.php#">jk37</a></li><li><a href="https://classic.the-west.net/game.php#">katho</a></li><li><a href="https://classic.the-west.net/game.php#">Knorpel</a></li><li><a href="https://classic.the-west.net/game.php#">Kuro</a></li><li><a href="https://classic.the-west.net/game.php#">lamiss27</a></li><li><a href="https://classic.the-west.net/game.php#">Mario</a></li><li><a href="https://classic.the-west.net/game.php#">Marmota17</a></li><li><a href="https://classic.the-west.net/game.php#">Matt Devereaux</a></li><li><a href="https://classic.the-west.net/game.php#">mattkeelock</a></li><li><a href="https://classic.the-west.net/game.php#">mclittle</a></li><li><a href="https://classic.the-west.net/game.php#">McNelly</a></li><li><a href="https://classic.the-west.net/game.php#">mitsos40</a></li><li><a href="https://classic.the-west.net/game.php#">Nakundoi</a></li><li><a href="https://classic.the-west.net/game.php#">Oscea</a></li><li><a href="https://classic.the-west.net/game.php#">pascal33</a></li><li><a href="https://classic.the-west.net/game.php#">Pegioner</a></li><li><a href="https://classic.the-west.net/game.php#">Pierre II</a></li><li><a href="https://classic.the-west.net/game.php#">pirate73</a></li><li><a href="https://classic.the-west.net/game.php#">Proboina</a></li><li><a href="https://classic.the-west.net/game.php#">quis</a></li><li><a href="https://classic.the-west.net/game.php#">Reuben Flagg</a></li><li><a href="https://classic.the-west.net/game.php#">sakari luyana</a></li><li><a href="https://classic.the-west.net/game.php#">samdimi</a></li><li><a href="https://classic.the-west.net/game.php#">santoryou</a></li><li><a href="https://classic.the-west.net/game.php#">Savas</a></li><li><a href="https://classic.the-west.net/game.php#">SDPotterxxx</a></li><li><a href="https://classic.the-west.net/game.php#">shearernz</a></li><li><a href="https://classic.the-west.net/game.php#">Sidney Strapon</a></li><li><a href="https://classic.the-west.net/game.php#">Sif Goldenhair</a></li><li><a href="https://classic.the-west.net/game.php#">struty84</a></li><li><a href="https://classic.the-west.net/game.php#">Teune</a></li><li><a href="https://classic.the-west.net/game.php#">timmy o tool</a></li><li><a href="https://classic.the-west.net/game.php#">unionzwerg</a></li><li><a href="https://classic.the-west.net/game.php#">vwICEvw</a></li><li><a href="https://classic.the-west.net/game.php#">wreed</a></li><li><a href="https://classic.the-west.net/game.php#">Ylthin</a></li></ul></div><div class="messages" id="chat_town_10"><ul class="messagelist"></ul><ul class="playerlist"><li><a href="https://classic.the-west.net/game.php#">bart</a></li><li><a href="https://classic.the-west.net/game.php#">gruberoid</a></li><li><a href="https://classic.the-west.net/game.php#">Gvardiy</a></li><li><a href="https://classic.the-west.net/game.php#">RockRUS</a></li></ul></div><form id="send" action="https://classic.the-west.net/game.php#"><input class="text" placeholder="Your message. Type /help for more information. Keep it English in the saloon chat." maxlength="200"><button class="emoji" type="button"><img src="./00_25_40 - Classic - The West_files/emoji_button_white.png"></button><button class="sendbutton">Send</button></form></div></div>
+		<div class="servertime" id="servertime">Server Time: 5/31/2018, 22:58:14</div><div id="minimap_container" style="display: none;">
+	<div id="minimap">
+		<div class="minimap_part" id="minimap10" style="left: 0px; top: 0px; background-image: url(&quot;images/minimap/1_4.png&quot;);"></div>
+		<div class="minimap_part" id="minimap00" style="left: 216px; top: 0px; background-image: url(&quot;images/minimap/0_4.png&quot;);"></div>
+		<div class="minimap_part" id="minimap11" style="left: 0px; top: 135px; background-image: url(&quot;images/minimap/1_5.png&quot;);"></div>
+		<div class="minimap_part" id="minimap01" style="left: 216px; top: 135px; background-image: url(&quot;images/minimap/0_5.png&quot;);"></div>
+		<div id="minimap_cities" style="background-image: url(&quot;img.php?type=town_map&amp;x=0&amp;y=2&amp;date=2546333&quot;);"></div>
+		<div id="minimap_jobs" style="background-image: url(&quot;img.php?type=job_map&amp;x=0&amp;y=2&amp;job_id=73&quot;);"></div>
+		<div id="minimap_rect" style="left: 319px; top: 54px;"></div>
+		<div id="minimap_own_town" style="left: 312px; top: 53px;"></div>
+		<div id="minimap_own_char" style="left: 329px; top: 60px;"></div>
+	</div>
+	<div id="minimap_clicker"></div>
+	<a href="https://classic.the-west.net/game.php#" onclick="WMap.scroll_map(0, -250)" id="minimap_north"></a>
+	<a href="https://classic.the-west.net/game.php#" onclick="WMap.scroll_map(-100, 0)" id="minimap_east"></a>
+	<a href="https://classic.the-west.net/game.php#" onclick="WMap.scroll_map(0, 250)" id="minimap_south"></a>
+	<a href="https://classic.the-west.net/game.php#" onclick="WMap.scroll_map(100, 0)" id="minimap_west"></a>
+	<div id="minimap_menu">
+		<a href="javascript:WMinimap.toggle()" id="minimap_e_close"></a>
+		<ul id="minimap_list">
+			<li style="background-position:0px 4px;"><strong>You are here!</strong></li>
+			<li style="background-position:0px -16px;"><strong>Your town</strong></li>
+			<li style="background-position:0px -36px;"><strong>Other towns</strong></li>
+			<li style="background-position:0px -96px;"><strong>Ghost towns</strong></li>
+			<li style="background-position:0px -114px;">
+			<select style="background-color: #e8dab3; font-size: 9px" id="minimap_job_id" onchange="WMinimap.update()"><option value="0">-- Select job --</option><option value="73">Ambush</option><option value="74">Ambush stagecoach</option><option value="39">Beaver hunt</option><option value="75">Bounty hunter</option><option value="29">Branding cattle</option><option value="35">Breaking in horses</option><option value="47">Building a bridge</option><option value="49">Building coffins</option><option value="43">Building railroad sta...</option><option value="44">Building windmills</option><option value="78">Burglary</option><option value="33">Carving out claims</option><option value="48">Catching horses</option><option value="72">Chasing bandits</option><option value="55">Clearing the forest</option><option value="40">Coal mining</option><option value="22">Cowboy</option><option value="27">Cutting trees</option><option value="19">Digging graves</option><option value="67">Drilling for oil</option><option value="62">Evangelizing</option><option value="45">Exploration</option><option value="32">Gemstone search</option><option value="65">Grave robber</option><option value="16">Guard fort</option><option value="57">Guarding the stage coach</option><option value="8">Harvesting fields  </option><option value="51">Hunt coyotes</option><option value="52">Hunting buffalo</option><option value="66">Hunting grizzly bear</option><option value="20">Hunting turkey</option><option value="58">Hunting wolves</option><option value="30">Installing a barbed w...</option><option value="21">Laying railroad tracks</option><option value="71">Mercenary work</option><option value="15">Picking beans</option><option value="9">Picking berries</option><option value="14">Picking corn</option><option value="5">Picking cotton</option><option value="6">Picking sugar cane  </option><option value="4">Picking tobacco</option><option value="63">Pony express</option><option value="61">Prison guard</option><option value="18">Prospecting</option><option value="59">Protecting the track ...</option><option value="3">Putting up posters</option><option value="46">Rafting wood</option><option value="23">Repair fences</option><option value="34">Repairing a covered w...</option><option value="42">River fishing</option><option value="70">Robbing settlers</option><option value="77">Robbing trains</option><option value="2">Scare birds off the f...</option><option value="64">Selling guns to indians</option><option value="11">Selling newspaper *Th...</option><option value="69">Serving in the army</option><option value="37">Setting up telegraph ...</option><option value="56">Silver mining</option><option value="60">Stealing Horses</option><option value="25">Stone mining</option><option value="7">Stream fishing</option><option value="17">Tanning deer skin</option><option value="1">Tending pigs</option><option value="10">Tending sheep</option><option value="36">Trading</option><option value="54">Trading with indians</option><option value="50">Transport ammunition</option><option value="76">Transporting prisoners</option><option value="68">Treasure hunt</option></select>
+			</li>
+		</ul>
+		<div id="minimap_micro">
+			<div id="minimap_micro_box" style="left: 162px; top: 24px;"></div>
+			<div id="minimap_micro_clicker"></div>
+			<div id="minimap_micro_player" style="position: absolute; width: 6px; height: 6px; top: 25px; left: 172px; background-image: url(&quot;/images/main/dots.png&quot;); background-position: 0px 0px;"></div>
+			<div id="minimap_micro_hometown" style="position: absolute; width: 6px; height: 6px; top: 24px; left: 172px; background-image: url(&quot;/images/main/dots.png&quot;); background-position: 0px -20px;"></div>
+		</div>
+	</div>
+</div>		<div id="window_bar"></div>
+	</div>
+	<div id="windows">
+	<div id="window_character" class="window" style="z-index: 583; left: 54px; top: 121px; position: absolute;"><div class="window_borders"><h2 id="window_character_title" class="window_title" style="background-image:url(img.php?type=window_title&amp;value=character);"><span>character</span></h2><a href="javascript:AjaxWindow.closeAll();" class="window_closeall"></a><a href="javascript:AjaxWindow.toggleSize(&#39;character&#39;);" class="window_minimize"></a><a href="javascript:AjaxWindow.close(&#39;character&#39;);" class="window_close"></a><div id="window_character_content" class="window_content">
+
+<div id="char_avatar">
+	<table class="shadow_table">
+	<tbody><tr>
+		<td class="edge_shadow_top_left"></td>
+		<td class="border_shadow_top"></td>
+		<td class="edge_shadow_top_right"></td>
+	</tr>
+	<tr>
+		<td class="border_shadow_left"></td>
+		<td class="shadow_content"><div>	<img src="./00_25_40 - Classic - The West_files/pilgrim.png" alt="Avatar">
+			</div></td>
+		<td class="border_shadow_right"></td>
+	</tr>
+	<tr>
+		<td class="edge_shadow_bottom_left"></td>
+		<td class="border_shadow_bottom"></td>
+		<td class="edge_shadow_bottom_right"></td>
+	</tr>
+</tbody></table>
+</div>
+
+<div id="char_info">
+	<table>
+		<tbody><tr>
+			<th>Level</th>
+			<td id="level">29</td>
+		</tr>
+		<tr>
+			<th>Experience points</th>
+			<td id="experience">273 / 910</td>
+		</tr>
+		<tr>
+			<th>Health points</th>
+			<td id="health">670 / 670</td>
+		</tr>
+		<tr>
+			<th>Energy</th>
+			<td id="energy">46 / 150</td>
+		</tr>
+		<tr>
+			<th>Speed</th>
+			<td id="speed">175%</td>
+		</tr>
+		<tr>
+			<th>Dueling level</th>
+			<td>29</td>
+		</tr>
+		<tr>
+			<th>Duels won</th>
+			<td>1</td>
+		</tr>
+		<tr>
+			<th>Duels lost</th>
+			<td>27</td>
+		</tr>
+	</tbody></table>
+</div></div></div></div><div id="window_skill" class="window" style="z-index: 584; left: 65px; top: 477px; position: absolute;"><div class="window_borders"><h2 id="window_skill_title" class="window_title" style="background-image:url(img.php?type=window_title&amp;value=skill);"><span>skill</span></h2><a href="javascript:AjaxWindow.closeAll();" class="window_closeall"></a><a href="javascript:AjaxWindow.toggleSize(&#39;skill&#39;);" class="window_minimize"></a><a href="javascript:AjaxWindow.close(&#39;skill&#39;);" class="window_close"></a><div id="window_skill_content" class="window_content">
+
+<div class="skill_icon_layer">
+	<img src="./00_25_40 - Classic - The West_files/skill_pure.jpg" alt=""></div>
+<div class="skill_content_layer_middle">
+	<div class="skill_content_reskill_info" style="display:none;">
+		<div class="bold skill_content_reskill_title">Change Attributes and Skills </div>
+		<div class="skill_icon_reskill skill_icon_reskill_current"> Current Cost:</div><div class="skill_cost_reskill" id="skill_cost_reskill_current">$ 0</div><br>
+		<div class="skill_icon_reskill skill_icon_reskill_attribute"> costs of attribute points :</div><div class="skill_cost_reskill" id="skill_cost_reskill_attribute">$ 0</div><br>
+		<div class="skill_icon_reskill skill_icon_reskill_skill"> costs of skill points:</div><div class="skill_cost_reskill" id="skill_cost_reskill_skill">$ 0</div>
+	</div>
+	<div class="skill_content_skill_info" style="display:block;">
+		<div class="bold skill_content_reskill_title">assign Attributes and Skills </div>
+		<div class="skill_icon_reskill skill_icon_reskill_attribute"> Used attribute points :</div><div class="skill_cost_reskill" id="skill_overview_attributes">29</div><br>
+		<div class="skill_icon_reskill skill_icon_reskill_skill"> Used skill points:</div><div class="skill_cost_reskill" id="skill_overview_skills">87</div>
+	</div>
+</div>
+<div id="skill_points_layer">
+	<table>
+		<tbody><tr>
+			<td style="text-align:center; width:100px;"><img id="attribute_points" src="./00_25_40 - Classic - The West_files/img.php" alt="0"></td>
+			<td style="text-align:center; width:100px;"><img id="skill_points" src="./00_25_40 - Classic - The West_files/img(1).php" alt="0"></td>
+		</tr>
+		<tr>
+			<td style="text-align:center;">Attributes</td>
+			<td style="text-align:center;">Skills</td>
+		</tr>
+	</tbody></table>
+	<p id="confirm_field">
+		<img id="skill_reskill_confirm_button" src="./00_25_40 - Classic - The West_files/img(2).php" alt="" style="cursor: pointer;"> 
+		<img id="skill_reskill_cancel_button" src="./00_25_40 - Classic - The West_files/img(3).php" alt="" style="cursor: pointer;"> 
+	</p>
+</div>
+<div class="skill_attribute_skills">
+	<div style="clear:both;">
+		<div style="float:left; width:360px;">
+			<table>
+				<tbody><tr>
+					<td style="width:70px;">
+						<img id="attribute_strength" src="./00_25_40 - Classic - The West_files/img(4).php" alt="Strength" style="cursor: pointer;">
+					</td>
+					<td style="font-size:20px; font-weight:bold;">Strength</td>
+				</tr>	
+			</tbody></table>
+		</div>
+		<div class="attribute">
+			<img id="skill_build" src="./00_25_40 - Classic - The West_files/img(5).php" alt="" style="cursor: pointer;">
+			<img id="skill_punch" src="./00_25_40 - Classic - The West_files/img(6).php" alt="" style="cursor: pointer;">
+			<img id="skill_tough" src="./00_25_40 - Classic - The West_files/img(7).php" alt="" style="cursor: pointer;">
+			<img id="skill_endurance" src="./00_25_40 - Classic - The West_files/img(8).php" alt="" style="cursor: pointer;">
+			<img id="skill_health" src="./00_25_40 - Classic - The West_files/img(9).php" alt="" style="cursor: pointer;">
+		</div>
+	</div>
+	<div style="clear:both;">
+		<div style="float:left; width:360px;">
+			<table>
+				<tbody><tr>
+					<td style="width:70px;">
+						<img id="attribute_flexibility" src="./00_25_40 - Classic - The West_files/img(10).php" alt="Mobility" style="cursor: pointer;">
+					</td>
+					<td style="font-size:20px; font-weight:bold;">Mobility</td>
+				</tr>	
+			</tbody></table>
+		</div>
+		<div class="attribute">
+			<img id="skill_ride" src="./00_25_40 - Classic - The West_files/img(11).php" alt="" style="cursor: pointer;">
+			<img id="skill_reflex" src="./00_25_40 - Classic - The West_files/img(12).php" alt="" style="cursor: pointer;">
+			<img id="skill_dodge" src="./00_25_40 - Classic - The West_files/img(13).php" alt="" style="cursor: pointer;">
+			<img id="skill_hide" src="./00_25_40 - Classic - The West_files/img(14).php" alt="" style="cursor: pointer;">
+			<img id="skill_swim" src="./00_25_40 - Classic - The West_files/img(15).php" alt="" style="cursor: pointer;">
+		</div>
+	</div>
+	<div style="clear:both;">
+		<div style="float:left; width:360px;">
+			<table>
+				<tbody><tr>
+					<td style="width:70px;">
+						<img id="attribute_dexterity" src="./00_25_40 - Classic - The West_files/img(16).php" alt="Dexterity" style="cursor: pointer;">
+					</td>
+					<td style="font-size:20px; font-weight:bold;">Dexterity</td>
+				</tr>	
+			</tbody></table>
+		</div>
+		<div class="attribute">
+			<img id="skill_aim" src="./00_25_40 - Classic - The West_files/img(17).php" alt="" style="cursor: pointer;">
+			<img id="skill_shot" src="./00_25_40 - Classic - The West_files/img(18).php" alt="" style="cursor: pointer;">
+			<img id="skill_pitfall" src="./00_25_40 - Classic - The West_files/img(19).php" alt="" style="cursor: pointer;">
+			<img id="skill_finger_dexterity" src="./00_25_40 - Classic - The West_files/img(20).php" alt="" style="cursor: pointer;">
+			<img id="skill_repair" src="./00_25_40 - Classic - The West_files/img(21).php" alt="" style="cursor: pointer;">
+		</div>
+	</div>
+	<div style="clear:both;">
+		<div style="float:left; width:360px;">
+			<table>
+				<tbody><tr>
+					<td style="width:70px;">
+						<img id="attribute_charisma" src="./00_25_40 - Classic - The West_files/img(22).php" alt="Charisma" style="cursor: pointer;">
+					</td>
+					<td style="font-size:20px; font-weight:bold;">Charisma</td>
+				</tr>	
+			</tbody></table>
+		</div>
+		<div class="attribute">
+			<img id="skill_leadership" src="./00_25_40 - Classic - The West_files/img(23).php" alt="" style="cursor: pointer;">
+			<img id="skill_tactic" src="./00_25_40 - Classic - The West_files/img(24).php" alt="" style="cursor: pointer;">
+			<img id="skill_trade" src="./00_25_40 - Classic - The West_files/img(25).php" alt="" style="cursor: pointer;">
+			<img id="skill_animal" src="./00_25_40 - Classic - The West_files/img(26).php" alt="" style="cursor: pointer;">
+			<img id="skill_appearance" src="./00_25_40 - Classic - The West_files/img(27).php" alt="" style="cursor: pointer;">
+		</div>
+	</div>
+</div>
+<div class="skill_toggle_item_bonus">
+	<label><input type="checkbox" onchange="WindowSkill.getInstance().toggle_bonus(this.checked);" checked="checked">Show bonus</label>
+</div></div></div></div><div id="window_inventory" class="window" style="z-index: 577; left: -209px; top: 1136px; position: absolute;"><div class="window_borders"><h2 id="window_inventory_title" class="window_title" style="background-image:url(img.php?type=window_title&amp;value=inventory);"><span>inventory</span></h2><a href="javascript:AjaxWindow.closeAll();" class="window_closeall"></a><a href="javascript:AjaxWindow.toggleSize(&#39;inventory&#39;);" class="window_minimize"></a><a href="javascript:AjaxWindow.close(&#39;inventory&#39;);" class="window_close"></a><div id="window_inventory_content" class="window_content">
+
+<table style="float:left;" cellspacing="0" cellpadding="0">
+<tbody><tr><td style="height:6px; background: no-repeat url(images/border/edge_tl_small.png);"></td><td style="background: repeat-x url(images/border/border_t.png);"></td><td style="background: no-repeat url(images/border/edge_tr_small.png); width:6px; height:6px;"></td></tr>
+<tr><td style="background: repeat-y url(images/border/border_l.png); width:6px;"></td><td class="shadow_content">
+<div id="wear">
+	<div style="position:relative;">
+		<div id="char_head" class="wear_head"><img src="./00_25_40 - Classic - The West_files/bowler_brown.png" alt="Brown bowler hat" title="" style="cursor: pointer;"></div>
+		<div id="char_neck" class="wear_neck"><img src="./00_25_40 - Classic - The West_files/fly_grey.png" alt="Gray bow tie" title="" style="cursor: pointer;"></div>
+		<div id="char_body" class="wear_body"><img src="./00_25_40 - Classic - The West_files/poncho_fine.png" alt="Clint&#39;s Poncho" title="" style="cursor: pointer;"></div>
+		<div id="char_right_arm" class="wear_right_arm"></div>
+		<div id="char_yield" class="wear_yield"><img src="./00_25_40 - Classic - The West_files/sledgehammer.png" alt="Sledge hammer" title="" style="cursor: pointer;"></div>
+		<div id="char_foot" class="wear_foot"><img src="./00_25_40 - Classic - The West_files/ripped_shoes_brown.png" alt="Brown ragged shoes" title="" style="cursor: pointer;"></div>
+		<div id="char_animal" class="wear_animal"><img src="./00_25_40 - Classic - The West_files/mustang.png" alt="Mustang" title="" style="cursor: pointer;"></div>
+	</div>
+</div>
+</td><td style="background: repeat-y url(images/border/border_r.png) right; width:6px;"></td></tr><tr><td style="background: no-repeat url(images/border/edge_bl.png);height:6px; width:6px;"></td><td style="background: repeat-x url(images/border/border_b.png)"></td><td style="background: no-repeat url(images/border/edge_br.png); height:6px; width:6px;"></td></tr>
+</tbody></table>
+<div style="position:absolute; right:10px;">
+	<h2 style="margin:0; padding:0; font-size:26px; margin-bottom:18px;">Backpack </h2>
+	<table cellspacing="0" cellpadding="0">
+<tbody><tr><td style="height:6px; background: no-repeat url(images/border/edge_tl_small.png);"></td><td style="background: repeat-x url(images/border/border_t.png);"></td><td style="background: no-repeat url(images/border/edge_tr_small.png); width:6px; height:6px;"></td></tr>
+<tr><td style="background: repeat-y url(images/border/border_l.png); width:6px;"></td><td class="shadow_content">
+	<div id="bag"><div class="bag_item" id="item_318468"><img src="./00_25_40 - Classic - The West_files/band_black.png" alt="Black headband" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_318492"><img src="./00_25_40 - Classic - The West_files/slouch_cap_grey.png" alt="Gray cap" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_309810"><img src="./00_25_40 - Classic - The West_files/cap_grey.png" alt="Gray beanie" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_126928"><img src="./00_25_40 - Classic - The West_files/tatter_grey.png" alt="Gray rags" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_335541"><img src="./00_25_40 - Classic - The West_files/tatter_red.png" alt="Red rags" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_318489"><img src="./00_25_40 - Classic - The West_files/tatter_brown.png" alt="Brown rags" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_451187"><img src="./00_25_40 - Classic - The West_files/poncho_yellow.png" alt="Yellow Poncho" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_537349"><img src="./00_25_40 - Classic - The West_files/coat_red.png" alt="Red cotton jacket" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_150177"><img src="./00_25_40 - Classic - The West_files/ripped_shoes_grey.png" alt="Gray ragged shoes" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_489440"><img src="./00_25_40 - Classic - The West_files/light_grey.png" alt="Gray cotton shoes" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_360573"><img src="./00_25_40 - Classic - The West_files/band_red.png" alt="Red bandana" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_149801"><img src="./00_25_40 - Classic - The West_files/band_brown.png" alt="Brown bandana" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_224811"><img src="./00_25_40 - Classic - The West_files/leather.png" alt="Leather" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_437038"><img src="./00_25_40 - Classic - The West_files/water.png" alt="Glass of water" title="" style="cursor: pointer;"></div><div class="bag_item" id="item_437036"><img src="./00_25_40 - Classic - The West_files/empty_bottle.png" alt="Empty bottle" title="" style="cursor: pointer;"></div></div>
+	
+</td><td style="background: repeat-y url(images/border/border_r.png) right; width:6px;"></td></tr><tr><td style="background: no-repeat url(images/border/edge_bl.png);height:6px; width:6px;"></td><td style="background: repeat-x url(images/border/border_b.png)"></td><td style="background: no-repeat url(images/border/edge_br.png); height:6px; width:6px;"></td></tr>
+</tbody></table>
+</div>
+
+</div></div></div><div id="window_building_saloon" class="window" style="z-index: 585; left: 537px; top: 481px; position: absolute;"><div class="window_borders"><h2 id="window_building_saloon_title" class="window_title" style="background-image:url(img.php?type=window_title&amp;value=building_saloon);"><span>building_saloon</span></h2><a href="javascript:AjaxWindow.closeAll();" class="window_closeall"></a><a href="javascript:AjaxWindow.toggleSize(&#39;building_saloon&#39;);" class="window_minimize"></a><a href="javascript:AjaxWindow.close(&#39;building_saloon&#39;);" class="window_close"></a><div id="window_building_saloon_content" class="window_content">
+
+<div class="window_menu" id="saloon_menu">
+	<a href="https://classic.the-west.net/game.php#" id="saloon_menu_saloon" class="active">Saloon</a>
+	<a href="https://classic.the-west.net/game.php#" id="saloon_menu_questlog">Quest book</a>
+</div><div id="tab_saloon"><div class="questEmployerOverviewBox">
+	<img class="empty" src="./00_25_40 - Classic - The West_files/transparent.png" alt="" usemap="#mapQuestEmployer">
+	<map name="mapQuestEmployer" id="mapQuestEmployer">
+		<area shape="poly" coords="148,101,177,108,200,164,182,216,108,191" class="imagemap_barkeeper" href="javascript:Saloon.show_employer(&#39;barkeeper&#39;);">
+		<area shape="poly" coords="482,127,541,207,550,368,466,367,418,233" class="imagemap_indian" href="javascript:Saloon.show_employer(&#39;indian&#39;);">
+		<area shape="poly" coords="1,398,68,218,100,195,138,217,176,398" class="imagemap_sheriff" href="javascript:Saloon.show_employer(&#39;sheriff&#39;);">
+		<area shape="poly" coords="248,157,315,66,378,159,368,270,299,370" class="imagemap_lady" href="javascript:Saloon.show_employer(&#39;lady&#39;);">
+	</map>
+		<img src="./00_25_40 - Classic - The West_files/barkeeper.png" style="position:absolute; left:91px; top:104px; z-index:2" alt="">
+		<img src="./00_25_40 - Classic - The West_files/indian.png" style="position:absolute; left:407px; top:123px; z-index:2" alt="">
+		<img src="./00_25_40 - Classic - The West_files/sheriff.png" style="position:absolute; left:3px; top:202px; z-index:2" alt="">
+		<img src="./00_25_40 - Classic - The West_files/lady.png" style="position:absolute; left:241px; top:79px; z-index:2" alt="">
+		<img src="./00_25_40 - Classic - The West_files/sheriff(1).png" style="position:absolute; left:92px; top:165px; z-index:2" alt="">
+		<img src="./00_25_40 - Classic - The West_files/indian(1).png" style="position:absolute; left:475px; top:104px; z-index:2" alt="">
+		<img src="./00_25_40 - Classic - The West_files/barkeeper(1).png" style="position:absolute; left:149px; top:69px; z-index:2" alt="">
+		<img src="./00_25_40 - Classic - The West_files/lady(1).png" style="position:absolute; left:306px; top:42px; z-index:2" alt="">
+</div></div><div id="tab_questlog"><h2>Quest book</h2>
+<div id="foldingAll"><a href="javascript:Saloon_Questlog.collapseAll();"><img src="./00_25_40 - Classic - The West_files/img(28).php"> all</a></div>
+<div id="questCapacity">used pages: 7 / 10</div>
+<br>
+<div style="overflow:auto; height:350px">
+<div id="questlog_employer_barkeeper">
+	<div class="questlog_header">
+		<a href="javascript:Saloon_Questlog.collapse(&#39;questlog_employer_barkeeper&#39;);"><img src="./00_25_40 - Classic - The West_files/img(28).php"></a> Barkeeper Henry Walker
+	</div>
+	<div class="questlog_entrie">
+		<a href="javascript:AjaxWindow.show(&#39;quest&#39;,{quest_id:190},&#39;190&#39;);">Well organized (Juicy steaks)</a>
+	</div>
+</div><div id="questlog_employer_indian">
+	<div class="questlog_header">
+		<a href="javascript:Saloon_Questlog.collapse(&#39;questlog_employer_indian&#39;);"><img src="./00_25_40 - Classic - The West_files/img(28).php"></a> Waupee (White Hawk)
+	</div>
+	<div class="questlog_entrie">
+		<a href="javascript:AjaxWindow.show(&#39;quest&#39;,{quest_id:88},&#39;88&#39;);">Waupee's Grandfather (The golden hawk)</a>
+	</div>
+</div><div id="questlog_employer_sheriff">
+	<div class="questlog_header">
+		<a href="javascript:Saloon_Questlog.collapse(&#39;questlog_employer_sheriff&#39;);"><img src="./00_25_40 - Classic - The West_files/img(28).php"></a> Sheriff John Fitzburn
+	</div>
+	<div class="questlog_entrie">
+		<a href="javascript:AjaxWindow.show(&#39;quest&#39;,{quest_id:25},&#39;25&#39;);">Manhunt (The search (Part 2))</a>
+	</div>
+	<div class="questlog_entrie">
+		<a href="javascript:AjaxWindow.show(&#39;quest&#39;,{quest_id:150},&#39;150&#39;);">The decision (Breaking in horses)</a>
+	</div>
+</div><div id="questlog_employer_lady">
+	<div class="questlog_header">
+		<a href="javascript:Saloon_Questlog.collapse(&#39;questlog_employer_lady&#39;);"><img src="./00_25_40 - Classic - The West_files/img(28).php"></a> Maya Roalstad
+	</div>
+	<div class="questlog_entrie">
+		<a href="javascript:AjaxWindow.show(&#39;quest&#39;,{quest_id:33},&#39;33&#39;);">Gemstones (Precious rocks on chains)</a>
+	</div>
+	<div class="questlog_entrie">
+		<a href="javascript:AjaxWindow.show(&#39;quest&#39;,{quest_id:123},&#39;123&#39;);">Erik's Flight (Erik)</a>
+	</div>
+	<div class="questlog_entrie">
+		<a href="javascript:AjaxWindow.show(&#39;quest&#39;,{quest_id:140},&#39;140&#39;);">Henry's Birthday (Back pain)</a>
+	</div>
+</div></div></div></div></div></div><div id="window_town_27_551" class="window" style="z-index: 569; left: 1429px; top: 1144px; position: absolute;"><div class="window_borders"><h2 id="window_town_27_551_title" class="window_title" style="background-image:url(img.php?type=window_title&amp;value=town);"><span>town_27_551</span></h2><a href="javascript:AjaxWindow.closeAll();" class="window_closeall"></a><a href="javascript:AjaxWindow.toggleSize(&#39;town_27_551&#39;);" class="window_minimize"></a><a href="javascript:AjaxWindow.close(&#39;town_27_551&#39;);" class="window_close"></a><div id="window_town_27_551_content" class="window_content">
+
+<div class="town_overview_center">
+	<div class="town_overview_citizen">49 town members</div>
+	<div class="town_overview_points">41300 Points</div>
+	<img src="./00_25_40 - Classic - The West_files/img(29).php" alt="" style="-moz-user-select:none;" unselectable="yes">
+	<table style="clear:both;" cellspacing="0" cellpadding="0">
+<tbody><tr><td style="height:6px; background: no-repeat url(images/border/edge_tl_small.png);"></td><td style="background: repeat-x url(images/border/border_t.png);"></td><td style="background: no-repeat url(images/border/edge_tr_small.png); width:6px; height:6px;"></td></tr>
+<tr><td style="background: repeat-y url(images/border/border_l.png); width:6px;"></td><td class="shadow_content">
+		<div class="town_background">
+			<img class="empty" src="./00_25_40 - Classic - The West_files/transparent.png" alt="" usemap="#map_town_27_551" style="-moz-user-select:none;" unselectable="yes">
+			<map name="map_town_27_551" id="map_town_27_551">
+				<area shape="poly" coords="182,85,237,84,285,117,287,159,193,171,159,112" class="imagemap_cityhall" href="javascript:AjaxWindow.show(&#39;building_cityhall&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="0,214,165,194,233,345,195,374,0,374" class="imagemap_bank" href="javascript:AjaxWindow.show(&#39;building_bank&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="470,271,643,201,644,374,519,373,462,336" class="imagemap_hotel" href="javascript:AjaxWindow.show(&#39;building_hotel&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="501,93,532,75,563,96,563,146,500,146" class="imagemap_gunsmith" href="javascript:AjaxWindow.show(&#39;building_gunsmith&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="430,92,455,72,494,92,494,144,431,145" class="imagemap_tailor" href="javascript:AjaxWindow.show(&#39;building_tailor&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="568,149,575,106,621,89,643,103,643,161" class="imagemap_general" href="javascript:AjaxWindow.show(&#39;building_general&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="420,227,494,248,462,269,456,327,373,288,418,275" class="imagemap_mortician" href="javascript:AjaxWindow.show(&#39;building_mortician&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="37,110,154,116,191,174,9,184" class="imagemap_church" href="javascript:AjaxWindow.show(&#39;building_church&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="256,87,347,98,359,141,291,154,289,116" class="imagemap_saloon" href="javascript:AjaxWindow.show(&#39;building_saloon&#39;,{town_id:10},&#39;10&#39;);">
+				<area shape="poly" coords="369,87,426,88,427,140,368,142" class="imagemap_post" href="javascript:AjaxWindow.show(&#39;messages&#39;);">
+				<area shape="poly" coords="314,319,383,324,380,374,313,373" class="imagemap_fingerboard" href="javascript:AjaxWindow.show(&#39;fingerboard&#39;,{town_id:10},&#39;10&#39;);">
+			</map>
+			<img src="./00_25_40 - Classic - The West_files/cityhall3.png" style="position:absolute; left:154px; top:82px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+			<img src="./00_25_40 - Classic - The West_files/tenement3.png" style="position:absolute; left:330px; top:46px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+			<img src="./00_25_40 - Classic - The West_files/bank3.png" style="position:absolute; left:0px; top:195px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+			<img src="./00_25_40 - Classic - The West_files/hotel3.png" style="position:absolute; left:459px; top:201px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+			<img src="./00_25_40 - Classic - The West_files/gunsmith3.png" style="position:absolute; left:494px; top:74px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+			<img src="./00_25_40 - Classic - The West_files/tailor3.png" style="position:absolute; left:423px; top:74px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+			<img src="./00_25_40 - Classic - The West_files/general3.png" style="position:absolute; left:564px; top:85px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+			<img src="./00_25_40 - Classic - The West_files/mortician1.png" style="position:absolute; left:368px; top:222px; z-index:2;-moz-user-select:none;" alt="" unselectable="yes">
+	   </div>
+	
+</td><td style="background: repeat-y url(images/border/border_r.png) right; width:6px;"></td></tr><tr><td style="background: no-repeat url(images/border/edge_bl.png);height:6px; width:6px;"></td><td style="background: repeat-x url(images/border/border_b.png)"></td><td style="background: no-repeat url(images/border/edge_br.png); height:6px; width:6px;"></td></tr>
+</tbody></table>
+</div></div></div></div><div id="window_forum" class="window" style="z-index: 586; left: 1094px; top: 474px; position: absolute;"><div class="window_borders"><h2 id="window_forum_title" class="window_title" style="background-image:url(img.php?type=window_title&amp;value=forum);"><span>forum</span></h2><a href="javascript:AjaxWindow.closeAll();" class="window_closeall"></a><a href="javascript:AjaxWindow.toggleSize(&#39;forum&#39;);" class="window_minimize"></a><a href="javascript:AjaxWindow.close(&#39;forum&#39;);" class="window_close"></a><div id="window_forum_content" class="window_content">
+<iframe src="./00_25_40 - Classic - The West_files/forum.html" frameborder="0" style="border:0px; width:705px; height:395px; margin:0px;"></iframe>
+<a href="https://classic.the-west.net/forum.php" target="_blank">» Open forum in new window</a></div></div></div><div id="window_duel" class="window" style="z-index: 588; left: 1045px; top: 132px; position: absolute;"><div class="window_borders"><h2 id="window_duel_title" class="window_title" style="background-image:url(img.php?type=window_title&amp;value=duel);"><span>duel</span></h2><a href="javascript:AjaxWindow.closeAll();" class="window_closeall"></a><a href="javascript:AjaxWindow.toggleSize(&#39;duel&#39;);" class="window_minimize"></a><a href="javascript:AjaxWindow.close(&#39;duel&#39;);" class="window_close"></a><div id="window_duel_content" class="window_content">
+
+<div class="window_menu" id="duel_menu">
+	<a href="https://classic.the-west.net/game.php#" id="duel_menu_duel" class="active">Duel</a>
+</div><div id="tab_duel">
+
+<div id="duel_div">
+	<table class="shadow_table">
+	<tbody><tr>
+		<td class="edge_shadow_top_left"></td>
+		<td class="border_shadow_top"></td>
+		<td class="edge_shadow_top_right"></td>
+	</tr>
+	<tr>
+		<td class="border_shadow_left"></td>
+		<td class="shadow_content"><div>	<table id="duel_table">
+		<tbody><tr>
+			<th></th>
+				<th>Round 1 and 5</th>
+				<th>Round 2 and 6</th>
+				<th>Round 3 and 7</th>
+				<th>Round 4 and 8</th>
+			</tr>
+		<tr>
+			<td style="text-align:center;">
+				<br><br>
+				<img src="./00_25_40 - Classic - The West_files/img(17).php" alt="" id="duel_skill_aim" style="-moz-user-select:none;" unselectable="yes"><br>
+				Aim
+			</td>
+				<td>
+				<map name="map_1" id="map_1">
+					<area shape="circle" coords="45,14,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(1,&#39;head&#39;);" alt="">
+					<area shape="circle" coords="60,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(1,&#39;rightshoulder&#39;);" alt="">
+					<area shape="circle" coords="30,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(1,&#39;leftshoulder&#39;);" alt="">
+					<area shape="circle" coords="20,77,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(1,&#39;leftarm&#39;);" alt="">
+					<area shape="circle" coords="80,72,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(1,&#39;rightarm&#39;);" alt=""> 				</map>
+				<img id="aim_1" style="visibility: visible;;-moz-user-select:none;" src="./00_25_40 - Classic - The West_files/rightarm.jpg" alt="" usemap="#map_1" unselectable="yes">
+			</td>
+				<td>
+				<map name="map_2" id="map_2">
+					<area shape="circle" coords="45,14,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(2,&#39;head&#39;);" alt="">
+					<area shape="circle" coords="60,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(2,&#39;rightshoulder&#39;);" alt="">
+					<area shape="circle" coords="30,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(2,&#39;leftshoulder&#39;);" alt="">
+					<area shape="circle" coords="20,77,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(2,&#39;leftarm&#39;);" alt="">
+					<area shape="circle" coords="80,72,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(2,&#39;rightarm&#39;);" alt=""> 				</map>
+				<img id="aim_2" style="visibility: visible;;-moz-user-select:none;" src="./00_25_40 - Classic - The West_files/leftshoulder.jpg" alt="" usemap="#map_2" unselectable="yes">
+			</td>
+				<td>
+				<map name="map_3" id="map_3">
+					<area shape="circle" coords="45,14,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(3,&#39;head&#39;);" alt="">
+					<area shape="circle" coords="60,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(3,&#39;rightshoulder&#39;);" alt="">
+					<area shape="circle" coords="30,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(3,&#39;leftshoulder&#39;);" alt="">
+					<area shape="circle" coords="20,77,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(3,&#39;leftarm&#39;);" alt="">
+					<area shape="circle" coords="80,72,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(3,&#39;rightarm&#39;);" alt=""> 				</map>
+				<img id="aim_3" style="visibility: visible;;-moz-user-select:none;" src="./00_25_40 - Classic - The West_files/leftarm.jpg" alt="" usemap="#map_3" unselectable="yes">
+			</td>
+				<td>
+				<map name="map_4" id="map_4">
+					<area shape="circle" coords="45,14,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(4,&#39;head&#39;);" alt="">
+					<area shape="circle" coords="60,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(4,&#39;rightshoulder&#39;);" alt="">
+					<area shape="circle" coords="30,42,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(4,&#39;leftshoulder&#39;);" alt="">
+					<area shape="circle" coords="20,77,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(4,&#39;leftarm&#39;);" alt="">
+					<area shape="circle" coords="80,72,8" href="https://classic.the-west.net/game.php#" onclick="Duel.getInstance().aim_select(4,&#39;rightarm&#39;);" alt=""> 				</map>
+				<img id="aim_4" style="visibility: visible;;-moz-user-select:none;" src="./00_25_40 - Classic - The West_files/head.jpg" alt="" usemap="#map_4" unselectable="yes">
+			</td>
+			</tr>
+		<tr>
+			<td style="text-align:center;">
+				<br><br>
+				<img src="./00_25_40 - Classic - The West_files/img(13).php" alt="" id="duel_skill_dodge" style="-moz-user-select:none;" unselectable="yes"><br>
+				Dodging
+			</td>
+				<td>
+				<div onclick="Duel.getInstance().dodge_swap(1);" style="position:relative; padding:0;">
+					<img style="position: absolute; visibility: visible; zoom: 1; opacity: 1;;-moz-user-select:none;" id="dodge_left_1" src="./00_25_40 - Classic - The West_files/left.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_right_1" src="./00_25_40 - Classic - The West_files/right.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_duck_1" src="./00_25_40 - Classic - The West_files/duck.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;;-moz-user-select:none;" id="dodge_aim_1" src="./00_25_40 - Classic - The West_files/aim.jpg" alt="" unselectable="yes">
+				</div>
+			</td>
+				<td>
+				<div onclick="Duel.getInstance().dodge_swap(2);" style="position:relative; padding:0;">
+					<img style="position: absolute; visibility: visible; zoom: 1; opacity: 1;;-moz-user-select:none;" id="dodge_left_2" src="./00_25_40 - Classic - The West_files/left.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_right_2" src="./00_25_40 - Classic - The West_files/right.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_duck_2" src="./00_25_40 - Classic - The West_files/duck.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;;-moz-user-select:none;" id="dodge_aim_2" src="./00_25_40 - Classic - The West_files/aim.jpg" alt="" unselectable="yes">
+				</div>
+			</td>
+				<td>
+				<div onclick="Duel.getInstance().dodge_swap(3);" style="position:relative; padding:0;">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_left_3" src="./00_25_40 - Classic - The West_files/left.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_right_3" src="./00_25_40 - Classic - The West_files/right.jpg" alt="" unselectable="yes">
+					<img style="position: absolute; visibility: visible; zoom: 1; opacity: 1;;-moz-user-select:none;" id="dodge_duck_3" src="./00_25_40 - Classic - The West_files/duck.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;;-moz-user-select:none;" id="dodge_aim_3" src="./00_25_40 - Classic - The West_files/aim.jpg" alt="" unselectable="yes">
+				</div>
+			</td>
+				<td>
+				<div onclick="Duel.getInstance().dodge_swap(4);" style="position:relative; padding:0;">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_left_4" src="./00_25_40 - Classic - The West_files/left.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_right_4" src="./00_25_40 - Classic - The West_files/right.jpg" alt="" unselectable="yes">
+					<img style="position:absolute; visibility:hidden;-moz-user-select:none;" id="dodge_duck_4" src="./00_25_40 - Classic - The West_files/duck.jpg" alt="" unselectable="yes">
+					<img style="position: absolute; visibility: visible; zoom: 1; opacity: 1;;-moz-user-select:none;" id="dodge_aim_4" src="./00_25_40 - Classic - The West_files/aim.jpg" alt="" unselectable="yes">
+				</div>
+			</td>
+			</tr>
+	</tbody></table>
+			</div></td>
+		<td class="border_shadow_right"></td>
+	</tr>
+	<tr>
+		<td class="edge_shadow_bottom_left"></td>
+		<td class="border_shadow_bottom"></td>
+		<td class="edge_shadow_bottom_right"></td>
+	</tr>
+</tbody></table>
+</div>
+<h2>Secondary skills</h2>
+<div class="duelSkillLayer">
+	<div class="duelSkillBox duelSkillBoxBig">
+		Dueling weapon<br>
+		<div id="duel_weapon_div" class="bag_item"><div class="bag_item"><img src="./00_25_40 - Classic - The West_files/fist.png" alt="Fist" title="" style="-moz-user-select:none;" unselectable="yes"></div></div>
+		<img src="./00_25_40 - Classic - The West_files/img(30).php" alt="" id="duel_skill_shot" style="-moz-user-select:none;" unselectable="yes">
+		<img src="./00_25_40 - Classic - The West_files/img(6).php" alt="" id="duel_skill_punch" style="-moz-user-select:none;" unselectable="yes">
+	</div>
+	<div class="duelSkillBox">
+		Resistance<br>
+		<img src="./00_25_40 - Classic - The West_files/img(12).php" alt="" id="duel_skill_reflex" style="-moz-user-select:none;" unselectable="yes">
+		<img src="./00_25_40 - Classic - The West_files/img(7).php" alt="" id="duel_skill_tough" style="-moz-user-select:none;" unselectable="yes">
+	</div>
+	<div class="duelSkillBox">
+		Attack<br>
+		<img src="./00_25_40 - Classic - The West_files/img(27).php" alt="" id="duel_skill_appearance" style="-moz-user-select:none;" unselectable="yes">
+	</div>
+	<div class="duelSkillBox">
+		Defense<br>
+		<img src="./00_25_40 - Classic - The West_files/img(24).php" alt="" id="duel_skill_tactic" style="-moz-user-select:none;" unselectable="yes">
+	</div>
+</div></div></div></div></div></div>
+ 
+
+<link href="./00_25_40 - Classic - The West_files/classic.css" rel="stylesheet" type="text/css"><script src="./00_25_40 - Classic - The West_files/socket.io.js.download"></script></body></html>
